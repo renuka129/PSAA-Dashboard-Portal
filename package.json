@@ -1,0 +1,52 @@
+{
+  "name": "sprint",
+  "version": "1.0.0",
+  "description": "Welcome to your new CAP project.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-psaa-employee": "cds watch --open psaaemployee/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-psaa-manager": "cds watch --open psaamanager/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-psaa-admin": "cds watch --open psaaadmin/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-psaa-home": "cds watch --open psaahome/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "start": "cds-serve"
+  },
+  "dependencies": {
+    "@cap-js/hana": "^3.1.2",
+    "@sap/approuter": "^23.3.0",
+    "@sap/xssec": "^4",
+    "bcryptjs": "^3.0.3",
+    "express-session": "^1.19.0"
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "devDependencies": {
+    "@sap/cds-dk": "^10.2.0",
+    "cds-plugin-ui5": "^0.13.6"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "manager": {
+            "password": "manager",
+            "roles": [
+              "manager"
+            ]
+          },
+          "*": true
+        }
+      },
+      "[hybrid]": {
+        "auth": {
+          "kind": "xsuaa"
+        }
+      }
+    }
+  }
+}

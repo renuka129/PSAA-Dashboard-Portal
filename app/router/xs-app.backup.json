@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "source": "^/(.*)$",
+      "target": "$1",
+      "destination": "srv-api",
+      "csrfProtection": true,
+      "authenticationType": "xsuaa"
+    }
+  ],
+  "authenticationMethod": "route"
+}

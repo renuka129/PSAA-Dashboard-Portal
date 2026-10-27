@@ -1,0 +1,262 @@
+/* =========================================
+   MANAGER DASHBOARD - GENERAL LAYOUT
+========================================= */
+
+.managerKpiContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: stretch;
+}
+
+.managerKpiCard {
+    box-sizing: border-box;
+    flex: 1 1 210px;
+    min-width: 200px;
+    padding: 1.25rem;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Card hover effect */
+.managerKpiCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.12);
+}
+
+/* KPI labels */
+.managerKpiCard .sapMLabel {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* KPI numbers */
+.managerKpiCard .sapMObjectNumber {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.managerKpiCard .sapMObjectNumberText {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* KPI descriptions */
+.managerKpiCard .sapMText {
+    display: block;
+    margin-top: 0.5rem;
+    color: #64748b;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* =========================================
+   KPI CARD VARIATIONS
+========================================= */
+
+.pendingKpiCard {
+    border-top: 4px solid #f59e0b;
+}
+
+.approvedKpiCard {
+    border-top: 4px solid #10b981;
+}
+
+.rejectedKpiCard {
+    border-top: 4px solid #ef4444;
+}
+
+/* =========================================
+   DASHBOARD PANELS
+========================================= */
+
+#managerContent .sapMPanel {
+    margin-bottom: 1.25rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+#managerContent .sapMPanelHdr {
+    padding: 1rem 1.25rem;
+    background: #f8fafc;
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* =========================================
+   BUDGET MONITORING TABLE
+========================================= */
+
+#managerBudgetsTable {
+    width: 100%;
+}
+
+#managerBudgetsTable .sapMListTblHeaderCell {
+    background: #f1f5f9;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+#managerBudgetsTable .sapMListTblHeaderCell .sapMText {
+    color: #334155;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+#managerBudgetsTable .sapMListTblCell {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    vertical-align: middle;
+}
+
+#managerBudgetsTable .sapMListTblRow:hover {
+    background: #f8fafc;
+}
+
+/* =========================================
+   BUDGET UTILIZATION PROGRESS BAR
+========================================= */
+
+#budgetUtilizationContainer {
+    min-width: 12rem;
+    padding: 0.25rem 0;
+}
+
+#budgetUtilizationProgress {
+    width: 12rem;
+}
+
+#budgetUtilizationProgress .sapMPI {
+    height: 1.25rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#budgetUtilizationProgress .sapMPIBar {
+    border-radius: 8px;
+}
+
+#budgetUtilizationProgress .sapMPIText {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* =========================================
+   BUDGET STATUS
+========================================= */
+
+#budgetStatusCell {
+    font-weight: 600;
+}
+
+/* Remaining budget values */
+#remainingBudgetCell .sapMObjectNumberText {
+    font-weight: 700;
+}
+
+/* =========================================
+   DASHBOARD TOOLBAR
+========================================= */
+
+#managerToolbar {
+    min-height: 3.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    background: transparent;
+}
+
+#managerDashboardTitle {
+    color: #0f172a;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* =========================================
+   INFORMATION MESSAGE
+========================================= */
+
+#managerInfoMessage {
+    border-radius: 8px;
+}
+
+/* =========================================
+   TABLE GENERAL STYLING
+========================================= */
+
+#managerProjectsTable .sapMListTblHeaderCell,
+#managerTasksTable .sapMListTblHeaderCell,
+#managerInvoicesTable .sapMListTblHeaderCell,
+#approvalTable .sapMListTblHeaderCell,
+#managerEntriesTable .sapMListTblHeaderCell {
+    background: #f8fafc;
+}
+
+#managerProjectsTable .sapMListTblHeaderCell .sapMText,
+#managerTasksTable .sapMListTblHeaderCell .sapMText,
+#managerInvoicesTable .sapMListTblHeaderCell .sapMText,
+#approvalTable .sapMListTblHeaderCell .sapMText,
+#managerEntriesTable .sapMListTblHeaderCell .sapMText {
+    color: #334155;
+    font-weight: 600;
+}
+
+/* =========================================
+   APPROVAL BUTTONS
+========================================= */
+
+#approveButton,
+#rejectButton {
+    min-width: 7rem;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 768px) {
+    .managerKpiContainer {
+        gap: 0.75rem;
+    }
+
+    .managerKpiCard {
+        flex: 1 1 145px;
+        min-width: 145px;
+        padding: 1rem;
+    }
+
+    .managerKpiCard .sapMObjectNumberText {
+        font-size: 1.4rem;
+    }
+
+    #managerDashboardTitle {
+        font-size: 1.25rem;
+    }
+
+    #budgetUtilizationContainer {
+        min-width: 9rem;
+    }
+
+    #budgetUtilizationProgress {
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .managerKpiCard {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+}

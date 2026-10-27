@@ -1,0 +1,82 @@
+<mvc:View
+    controllerName="psaaadmin.controller.Clients"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page id="clientsPage" title="Client Management" showNavButton="true" navButtonPress=".onNavBack">
+        <content>
+            <VBox id="clientsContainer" class="sapUiMediumMargin">
+
+                <Toolbar id="clientsToolbar">
+                    <Title id="clientsTitle" text="Clients" level="H2"/>
+                    <ToolbarSpacer id="clientsToolbarSpacer"/>
+                    <Button id="refreshClientsButton" text="Refresh" icon="sap-icon://refresh" press=".onRefresh"/>
+                    <Button id="addClientButton" text="Add Client" icon="sap-icon://add" type="Emphasized" press=".onAddClient"/>
+                </Toolbar>
+
+                <SearchField
+                    id="clientSearchField"
+                    width="100%"
+                    placeholder="Search by name, email or city"
+                    liveChange=".onSearch"/>
+
+                <Table
+                    id="clientsTable"
+                    items="{clientsModel>/clients}"
+                    growing="true"
+                    growingThreshold="10"
+                    noDataText="No clients found">
+
+                    <columns>
+    <Column id="clientNameColumn">
+        <Text id="clientNameHeader" text="Name"/>
+    </Column>
+    <Column id="clientEmailColumn">
+        <Text id="clientEmailHeader" text="Email"/>
+    </Column>
+    <Column id="clientPhoneColumn">
+        <Text id="clientPhoneHeader" text="Phone"/>
+    </Column>
+    <Column id="clientCityColumn">
+        <Text id="clientCityHeader" text="City"/>
+    </Column>
+    <Column id="clientStatusColumn">
+        <Text id="clientStatusHeader" text="Status"/>
+    </Column>
+    <Column id="clientActionsColumn" hAlign="Center">
+        <Text id="clientActionsHeader" text="Actions"/>
+    </Column>
+</columns>
+
+                    <items>
+    <ColumnListItem id="clientRow">
+        <cells>
+            <Text id="clientNameCell" text="{clientsModel>name}"/>
+            <Text id="clientEmailCell" text="{clientsModel>email}"/>
+            <Text id="clientPhoneCell" text="{clientsModel>phone}"/>
+            <Text id="clientCityCell" text="{clientsModel>city}"/>
+            <ObjectStatus id="clientStatusCell" text="{clientsModel>status}"/>
+            <HBox id="clientActionButtons" justifyContent="Center">
+                <Button
+                    id="editClientButton"
+                    icon="sap-icon://edit"
+                    type="Transparent"
+                    tooltip="Edit client"
+                    press=".onEditClient"/>
+                <Button
+                    id="deleteClientButton"
+                    icon="sap-icon://delete"
+                    type="Transparent"
+                    tooltip="Delete client"
+                    press=".onDeleteClient"/>
+            </HBox>
+        </cells>
+    </ColumnListItem>
+</items>
+                </Table>
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

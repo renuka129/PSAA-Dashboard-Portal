@@ -1,0 +1,6 @@
+
+ID,employeeNo,firstName,lastName,fullName,email,phone,designation,department,status,manager_ID
+aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa,EMP001,Sai,Kumar,Sai Kumar,sai.kumar@example.com,9876502001,Project Manager,Delivery,Active,
+bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb,EMP002,Priya,Reddy,Priya Reddy,priya.reddy@example.com,9876502002,Software Engineer,Engineering,Active,aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa
+cccccccc-cccc-4ccc-8ccc-cccccccccccc,EMP003,Arjun,Sharma,Arjun Sharma,arjun.sharma@example.com,9876502003,Data Engineer,Engineering,Active,aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa
+dddddddd-dddd-4ddd-8ddd-dddddddddddd,EMP004,Neha,Patel,Neha Patel,neha.patel@example.com,9876502004,QA Engineer,Quality Assurance,Active,aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa

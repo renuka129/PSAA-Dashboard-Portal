@@ -1,0 +1,792 @@
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:37:54.940161] Added process: "web" (STDOUT, API)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:37:54.950392] Created app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 (STDOUT, API)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:37:55.042035] Updating process: "web" (STDOUT, API)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:37:55.103293] Scaling process: "web" (STDOUT, API)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:11.747510] Uploading app package for app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 (STDOUT, API)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:11.910904] Updated app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 ({"environment_variables" => "[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:21.873845] Creating build for app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 (STDOUT, API)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.627866] Downloading zero_trust_sidecar_buildpack_1_21... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.628269] Downloading java_buildpack_v5_preview... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.628367] Downloading sap_java_buildpack_jakarta... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.628487] Downloading sap_java_buildpack_jakarta_2_76... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.656408] Downloaded java_buildpack_v5_preview (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.656443] Downloading sap_java_buildpack_jakarta_2_73... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.657165] Downloading sap_java_buildpack_jakarta_2_72... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.675948] Downloaded sap_java_buildpack_jakarta_2_76 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.675991] Downloading zero_trust_sidecar_buildpack_1_20... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.679556] Downloaded sap_java_buildpack_jakarta (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.679604] Downloading zero_trust_sidecar_buildpack_1_19... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.686393] Downloaded zero_trust_sidecar_buildpack_1_21 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.686428] Downloading zero_trust_sidecar_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.697554] Downloaded sap_java_buildpack_jakarta_2_73 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.697588] Downloading php_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.717126] Downloaded sap_java_buildpack_jakarta_2_72 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.717178] Downloading staticfile_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.719535] Downloaded zero_trust_sidecar_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.719572] Downloading java_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.723637] Downloaded zero_trust_sidecar_buildpack_1_19 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.723668] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.729850] Downloaded php_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.729885] Downloading go_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.735443] Downloaded zero_trust_sidecar_buildpack_1_20 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.735481] Downloading python_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.757363] Downloaded java_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.757415] Downloading nginx_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.758891] Downloaded staticfile_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.758935] Downloading binary_buildpack... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.770244] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.775933] Downloaded go_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.778581] Downloaded python_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.802263] Downloaded nginx_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.809492] Downloaded binary_buildpack (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:23.809581] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance 8a907052-3ba3-4174-aad0-472c5436aa43 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:25.500331] Security group rules were updated (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:25.559688] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance 8a907052-3ba3-4174-aad0-472c5436aa43 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:27.642354] Downloading app package... (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:27.725238] Downloaded app package (12K) (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:28.548995] -----> Nodejs Buildpack version 1.9.6 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:28.551166] -----> Bootstrapping python (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:28.551314] -----> Installing python 3.13.17 (STDOUT, STG)#
+#2026 10 27 16:38:31.796#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10225#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:28.551477] Copy [/tmp/buildpacks/00d125328f265a57/dependencies/6ffc15ed08f7a086278d2a86f21b1fdb/python_3.13.17_linux_x64_cflinuxfs4_c9ed5e8d.tgz] (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:34.011493] -----> Installing binaries (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:34.011583] engines.node (package.json): unspecified (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:34.011591] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:34.011602] [31;1m**WARNING**[0m Node version not specified in package.json or .nvmrc. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:34.012455] -----> Installing node 22.23.4 (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:34.012554] Copy [/tmp/buildpacks/00d125328f265a57/dependencies/80c36eea840edba696a5ed40c7af9255/node_22.23.4_linux_x64_cflinuxfs4_62a63458.tgz] (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:37.505333] Using default npm version: 10.9.9 (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:37.505362] -----> Installing yarn 1.22.22 (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:37.505367] Copy [/tmp/buildpacks/00d125328f265a57/dependencies/e4fe26756e9984a665478d350474fa2e/yarn_1.22.22_linux_noarch_any-stack_b6132b86.tgz] (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.009493] Installed yarn 1.22.22 (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.009530] -----> Creating runtime environment (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011536] [34;1mPRO TIP:[0m It is recommended to vendor the application's Node.js dependencies (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011696] Visit http://docs.cloudfoundry.org/buildpacks/node/index.html#vendoring (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011771] NODE_ENV=production (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011796] NODE_HOME=/tmp/contents1829573297/deps/0/node (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011839] NODE_MODULES_CACHE=true (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011843] NODE_VERBOSE=false (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011845] NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011849] NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011853] -----> Building dependencies (STDOUT, STG)#
+#2026 10 27 16:38:41.897#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10227#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:38.011856] Installing node modules (package.json + package-lock.json) (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.568701] added 195 packages, and audited 196 packages in 6s (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.568812] 34 packages are looking for funding (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.568840] run `npm fund` for details (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.574141] 2 high severity vulnerabilities (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.574174] To address all issues (including breaking changes), run: (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.574180] npm audit fix --force (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.574182] Run `npm audit` for details. (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.575349] npm notice (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.575395] npm notice New major version of npm available! 10.9.9 -> 12.2.1 (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.575401] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1 (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.575404] npm notice To update run: npm install -g npm@12.2.1 (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:44.575412] npm notice (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:45.324231] [31;1m**WARNING**[0m Unmet dependencies don't fail npm install but may cause runtime issues (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:45.324262] See: https://github.com/npm/npm/issues/7494 (STDOUT, STG)#
+#2026 10 27 16:38:52.047#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9143#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:45.353291] Contrast Security no credentials found. Will not write environment files. (STDOUT, STG)#
+#2026 10 27 16:39:02.066#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10236#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:59.531917] Exit status 0 (STDOUT, STG)#
+#2026 10 27 16:39:02.066#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10236#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:59.531991] Uploading droplet, build artifacts cache... (STDOUT, STG)#
+#2026 10 27 16:39:02.066#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10236#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:59.532047] Uploading droplet... (STDOUT, STG)#
+#2026 10 27 16:39:02.066#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10236#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:59.532134] Uploading build artifacts cache... (STDOUT, STG)#
+#2026 10 27 16:39:02.066#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10236#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:38:59.705055] Uploaded build artifacts cache (8.3M) (STDOUT, STG)#
+#2026 10 27 16:39:02.066#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10236#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:00.471049] Creating droplet for app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 (STDOUT, API)#
+#2026 10 27 16:39:12.094#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9541#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:02.551320] Uploaded droplet (61.9M) (STDOUT, STG)#
+#2026 10 27 16:39:12.094#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9541#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:02.589397] Uploading complete (STDOUT, STG)#
+#2026 10 27 16:39:12.094#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9541#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:03.528822] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 8a907052-3ba3-4174-aad0-472c5436aa43 (STDOUT, STG)#
+#2026 10 27 16:39:12.094#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9541#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:03.528864] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 8a907052-3ba3-4174-aad0-472c5436aa43 (STDOUT, STG)#
+#2026 10 27 16:39:12.094#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9541#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:03.570849] Staging complete for build 8a907052-3ba3-4174-aad0-472c5436aa43 (STDOUT, API)#
+#2026 10 27 16:39:12.094#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9541#
+[PollStageAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:08.125938] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 8a907052-3ba3-4174-aad0-472c5436aa43 (STDOUT, STG)#
+#2026 10 27 16:39:22.372#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:12.170506] Updated app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 ({droplet_guid: "aed3ec42-128d-45ef-8ba5-f61ad9d51d21"}) (STDOUT, API)#
+#2026 10 27 16:39:22.372#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:12.349224] Creating revision for app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 (STDOUT, API)#
+#2026 10 27 16:39:22.372#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:12.387988] Starting app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 (STDOUT, API)#
+#2026 10 27 16:39:22.372#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:12.683995] Cell c839c7b1-088e-41af-b9b7-66256aacd457 creating container for instance d9aaafb3-a3ff-4c41-7559-7838 (STDOUT, CELL)#
+#2026 10 27 16:39:22.372#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:13.475849] Security group rules were updated (STDOUT, CELL)#
+#2026 10 27 16:39:22.372#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:13.533451] Cell c839c7b1-088e-41af-b9b7-66256aacd457 successfully created container for instance d9aaafb3-a3ff-4c41-7559-7838 (STDOUT, CELL)#
+#2026 10 27 16:39:22.373#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:14.416530] Downloading droplet... (STDOUT, CELL)#
+#2026 10 27 16:39:22.373#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:20.428296] Downloaded droplet (61.9M) (STDOUT, CELL)#
+#2026 10 27 16:39:22.373#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:20.428414] Starting health monitoring of container (STDOUT, CELL)#
+#2026 10 27 16:39:22.373#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:20.596851] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:22.373#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:20.893508] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:22.373#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:21.486504] > start (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:22.373#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:21.486533] > node node_modules/@sap/approuter/approuter.js (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:22.373#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9170#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:21.716753] {"written_at":"2026-10-27T16:39:21.714Z","written_ts":1793119161714000000,"csn_component":"-","correlation_id":"-","type":"log","logger":"nodejs-logger","layer":"/LoggingLibrary","level":"warning","container_id":"10.32.2.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"","msg":"Dynamic log level switching not available"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.319399] {"written_at":"2026-10-27T16:39:22.316Z","written_ts":1793119162316000000,"csn_component":"-","correlation_id":"mvqwuojw","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.2.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwuojw","msg":"Application router version 23.3.0"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.324426] {"written_at":"2026-10-27T16:39:22.323Z","written_ts":1793119162323000000,"csn_component":"-","correlation_id":"mvqwuok3","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.2.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwuok3","msg":"No COOKIES environment variable"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332017] /home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332041] throw new VError('%s%s: %s', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332045] ^ (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332645] VError: xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332662] at JsonValidator.validate (/home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30:11) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332667] at Object.validateXsApp (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/validators.js:189:15) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332670] at exports.loadConfiguration (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/app-config.js:21:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332677] at module.exports.load (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration.js:25:34) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332681] at bootstrap (/home/vcap/deps/0/node_modules/@sap/approuter/lib/bootstrap.js:69:38) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332685] at Approuter.start (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:71:13) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332688] at Object.<anonymous> (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:178:6) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332692] at Module._compile (node:internal/modules/cjs/loader:1781:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332696] at Object..js (node:internal/modules/cjs/loader:1913:10) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332699] at Module.load (node:internal/modules/cjs/loader:1505:32) { (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332708] jse_shortmsg: 'xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory)', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332714] jse_info: {} (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332717] } (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.332720] Node.js v22.23.4 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.350177] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.350208] npm notice New major version of npm available! 10.9.9 -> 12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.350214] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.350217] npm notice To update run: npm install -g npm@12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.350225] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:22.437232] Exit status 1 (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:31.382230] Cell c839c7b1-088e-41af-b9b7-66256aacd457 stopping instance d9aaafb3-a3ff-4c41-7559-7838 (STDOUT, CELL)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:31.382279] Cell c839c7b1-088e-41af-b9b7-66256aacd457 destroying container for instance d9aaafb3-a3ff-4c41-7559-7838 (STDOUT, CELL)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:31.388319] Process has crashed with type: "web" (STDOUT, API)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:31.401087] App instance exited with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 payload: {"instance" => "d9aaafb3-a3ff-4c41-7559-7838", "index" => 0, "cell_id" => "c839c7b1-088e-41af-b9b7-66256aacd457", "reason" => "CRASHED", "exit_description" => "APP/PROC/WEB: Exited with status 1", "crash_count" => 1, "crash_timestamp" => 1793119171377280397, "version" => "00b4d13e-1022-406f-99f2-d0f4bb729499"} (STDOUT, API)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:31.481367] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance 2a51974d-6b39-442d-443b-e61f (STDOUT, CELL)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:31.787521] Security group rules were updated (STDOUT, CELL)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:31.810250] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance 2a51974d-6b39-442d-443b-e61f (STDOUT, CELL)#
+#2026 10 27 16:39:32.442#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9163#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:32.272486] Exit status 137 (STDOUT, PROXY)#
+#2026 10 27 16:39:42.479#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:35.356679] Downloaded droplet (61.9M) (STDOUT, CELL)#
+#2026 10 27 16:39:42.479#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:35.356770] Starting health monitoring of container (STDOUT, CELL)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:35.428062] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:35.465472] Cell c839c7b1-088e-41af-b9b7-66256aacd457 successfully destroyed container for instance d9aaafb3-a3ff-4c41-7559-7838 (STDOUT, CELL)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:35.582487] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:35.893940] > start (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:35.893972] > node node_modules/@sap/approuter/approuter.js (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.034054] {"written_at":"2026-10-27T16:39:36.032Z","written_ts":1793119176032000000,"csn_component":"-","correlation_id":"-","type":"log","logger":"nodejs-logger","layer":"/LoggingLibrary","level":"warning","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"","msg":"Dynamic log level switching not available"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.396607] {"written_at":"2026-10-27T16:39:36.396Z","written_ts":1793119176396000000,"csn_component":"-","correlation_id":"mvqwuzf0","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwuzf0","msg":"Application router version 23.3.0"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.400762] {"written_at":"2026-10-27T16:39:36.400Z","written_ts":1793119176400000000,"csn_component":"-","correlation_id":"mvqwuzf4","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwuzf4","msg":"No COOKIES environment variable"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.406993] /home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407025] throw new VError('%s%s: %s', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407032] ^ (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407328] VError: xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407346] at JsonValidator.validate (/home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30:11) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407352] at Object.validateXsApp (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/validators.js:189:15) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407357] at exports.loadConfiguration (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/app-config.js:21:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407363] at module.exports.load (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration.js:25:34) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407369] at bootstrap (/home/vcap/deps/0/node_modules/@sap/approuter/lib/bootstrap.js:69:38) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407372] at Approuter.start (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:71:13) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407376] at Object.<anonymous> (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:178:6) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407381] at Module._compile (node:internal/modules/cjs/loader:1781:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407384] at Object..js (node:internal/modules/cjs/loader:1913:10) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407387] at Module.load (node:internal/modules/cjs/loader:1505:32) { (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407389] jse_shortmsg: 'xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory)', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407391] jse_info: {} (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407393] } (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.407398] Node.js v22.23.4 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.418718] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.418732] npm notice New major version of npm available! 10.9.9 -> 12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.418739] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.418744] npm notice To update run: npm install -g npm@12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.418747] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:39:42.480#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10274#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:36.471565] Exit status 1 (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:42.933136] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance 2a51974d-6b39-442d-443b-e61f (STDOUT, CELL)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:42.933182] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance 2a51974d-6b39-442d-443b-e61f (STDOUT, CELL)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:42.938626] Process has crashed with type: "web" (STDOUT, API)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:42.951419] App instance exited with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 payload: {"instance" => "2a51974d-6b39-442d-443b-e61f", "index" => 0, "cell_id" => "77283d80-dfa7-40ba-ba4e-265aef112085", "reason" => "CRASHED", "exit_description" => "APP/PROC/WEB: Exited with status 1", "crash_count" => 2, "crash_timestamp" => 1793119182924176630, "version" => "00b4d13e-1022-406f-99f2-d0f4bb729499"} (STDOUT, API)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:43.002202] Exit status 137 (STDOUT, PROXY)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:43.038656] Cell 684caff8-89cd-492b-be01-b3d0835f1763 creating container for instance 3368699f-8a6f-484a-47d3-13ef (STDOUT, CELL)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:44.069193] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance 2a51974d-6b39-442d-443b-e61f (STDOUT, CELL)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:44.430946] Security group rules were updated (STDOUT, CELL)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:44.531830] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully created container for instance 3368699f-8a6f-484a-47d3-13ef (STDOUT, CELL)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:45.302611] Downloading droplet... (STDOUT, CELL)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:51.979931] Downloaded droplet (61.9M) (STDOUT, CELL)#
+#2026 10 27 16:39:52.578#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10280#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:51.980638] Starting health monitoring of container (STDOUT, CELL)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:52.245632] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:52.578631] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:53.265451] > start (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:53.265471] > node node_modules/@sap/approuter/approuter.js (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:53.520210] {"written_at":"2026-10-27T16:39:53.518Z","written_ts":1793119193518000000,"csn_component":"-","correlation_id":"-","type":"log","logger":"nodejs-logger","layer":"/LoggingLibrary","level":"warning","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"","msg":"Dynamic log level switching not available"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.186959] {"written_at":"2026-10-27T16:39:54.186Z","written_ts":1793119194186000000,"csn_component":"-","correlation_id":"mvqwvd56","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwvd56","msg":"Application router version 23.3.0"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.193433] {"written_at":"2026-10-27T16:39:54.193Z","written_ts":1793119194193000000,"csn_component":"-","correlation_id":"mvqwvd5d","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwvd5d","msg":"No COOKIES environment variable"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202246] /home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202304] throw new VError('%s%s: %s', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202321] ^ (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202870] VError: xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202898] at JsonValidator.validate (/home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30:11) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202903] at Object.validateXsApp (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/validators.js:189:15) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202919] at exports.loadConfiguration (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/app-config.js:21:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202923] at module.exports.load (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration.js:25:34) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202927] at bootstrap (/home/vcap/deps/0/node_modules/@sap/approuter/lib/bootstrap.js:69:38) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202929] at Approuter.start (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:71:13) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202933] at Object.<anonymous> (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:178:6) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202937] at Module._compile (node:internal/modules/cjs/loader:1781:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202942] at Object..js (node:internal/modules/cjs/loader:1913:10) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202968] at Module.load (node:internal/modules/cjs/loader:1505:32) { (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202972] jse_shortmsg: 'xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory)', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202976] jse_info: {} (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202982] } (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202986] Node.js v22.23.4 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222850] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222884] npm notice New major version of npm available! 10.9.9 -> 12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222905] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222912] npm notice To update run: npm install -g npm@12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222915] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.323775] Exit status 1 (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:01.794379] Cell 684caff8-89cd-492b-be01-b3d0835f1763 stopping instance 3368699f-8a6f-484a-47d3-13ef (STDOUT, CELL)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:01.794414] Cell 684caff8-89cd-492b-be01-b3d0835f1763 destroying container for instance 3368699f-8a6f-484a-47d3-13ef (STDOUT, CELL)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:01.802805] Process has crashed with type: "web" (STDOUT, API)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:01.816727] App instance exited with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 payload: {"instance" => "3368699f-8a6f-484a-47d3-13ef", "index" => 0, "cell_id" => "684caff8-89cd-492b-be01-b3d0835f1763", "reason" => "CRASHED", "exit_description" => "APP/PROC/WEB: Exited with status 1", "crash_count" => 3, "crash_timestamp" => 1793119201791183117, "version" => "00b4d13e-1022-406f-99f2-d0f4bb729499"} (STDOUT, API)#
+#2026 10 27 16:40:02.811#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9565#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:02.306375] Exit status 137 (STDOUT, PROXY)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:52.245632] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:52.578631] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:53.265451] > start (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:53.265471] > node node_modules/@sap/approuter/approuter.js (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:53.520210] {"written_at":"2026-10-27T16:39:53.518Z","written_ts":1793119193518000000,"csn_component":"-","correlation_id":"-","type":"log","logger":"nodejs-logger","layer":"/LoggingLibrary","level":"warning","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"","msg":"Dynamic log level switching not available"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.186959] {"written_at":"2026-10-27T16:39:54.186Z","written_ts":1793119194186000000,"csn_component":"-","correlation_id":"mvqwvd56","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwvd56","msg":"Application router version 23.3.0"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.193433] {"written_at":"2026-10-27T16:39:54.193Z","written_ts":1793119194193000000,"csn_component":"-","correlation_id":"mvqwvd5d","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwvd5d","msg":"No COOKIES environment variable"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202246] /home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202304] throw new VError('%s%s: %s', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202321] ^ (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202870] VError: xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202898] at JsonValidator.validate (/home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30:11) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202903] at Object.validateXsApp (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/validators.js:189:15) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202919] at exports.loadConfiguration (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/app-config.js:21:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202923] at module.exports.load (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration.js:25:34) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202927] at bootstrap (/home/vcap/deps/0/node_modules/@sap/approuter/lib/bootstrap.js:69:38) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202929] at Approuter.start (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:71:13) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202933] at Object.<anonymous> (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:178:6) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202937] at Module._compile (node:internal/modules/cjs/loader:1781:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202942] at Object..js (node:internal/modules/cjs/loader:1913:10) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202968] at Module.load (node:internal/modules/cjs/loader:1505:32) { (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202972] jse_shortmsg: 'xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory)', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202976] jse_info: {} (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202982] } (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.202986] Node.js v22.23.4 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222850] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222884] npm notice New major version of npm available! 10.9.9 -> 12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222905] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222912] npm notice To update run: npm install -g npm@12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.222915] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:39:54.323775] Exit status 1 (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:01.794379] Cell 684caff8-89cd-492b-be01-b3d0835f1763 stopping instance 3368699f-8a6f-484a-47d3-13ef (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:01.794414] Cell 684caff8-89cd-492b-be01-b3d0835f1763 destroying container for instance 3368699f-8a6f-484a-47d3-13ef (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:01.802805] Process has crashed with type: "web" (STDOUT, API)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:01.816727] App instance exited with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 payload: {"instance" => "3368699f-8a6f-484a-47d3-13ef", "index" => 0, "cell_id" => "684caff8-89cd-492b-be01-b3d0835f1763", "reason" => "CRASHED", "exit_description" => "APP/PROC/WEB: Exited with status 1", "crash_count" => 3, "crash_timestamp" => 1793119201791183117, "version" => "00b4d13e-1022-406f-99f2-d0f4bb729499"} (STDOUT, API)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:02.306375] Exit status 137 (STDOUT, PROXY)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:05.889474] Stopping app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 (STDOUT, API)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:06.058827] Starting app with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 (STDOUT, API)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:06.265668] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance 13a5bd0d-1335-4ba2-592f-2c40 (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:06.572144] Security group rules were updated (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:06.592594] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance 13a5bd0d-1335-4ba2-592f-2c40 (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:06.880152] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully destroyed container for instance 3368699f-8a6f-484a-47d3-13ef (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:07.160520] Downloading droplet... (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:10.472212] Downloaded droplet (61.9M) (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:10.472343] Starting health monitoring of container (STDOUT, CELL)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:10.532238] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:10.686313] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:10.989712] > start (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:10.989734] > node node_modules/@sap/approuter/approuter.js (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.125804] {"written_at":"2026-10-27T16:40:11.124Z","written_ts":1793119211124000000,"csn_component":"-","correlation_id":"-","type":"log","logger":"nodejs-logger","layer":"/LoggingLibrary","level":"warning","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"","msg":"Dynamic log level switching not available"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.488997] {"written_at":"2026-10-27T16:40:11.488Z","written_ts":1793119211488000000,"csn_component":"-","correlation_id":"mvqwvqhs","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwvqhs","msg":"Application router version 23.3.0"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.492988] {"written_at":"2026-10-27T16:40:11.492Z","written_ts":1793119211492000000,"csn_component":"-","correlation_id":"mvqwvqhw","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwvqhw","msg":"No COOKIES environment variable"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.498782] /home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.498798] throw new VError('%s%s: %s', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.498801] ^ (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499144] VError: xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499157] at JsonValidator.validate (/home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30:11) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499163] at Object.validateXsApp (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/validators.js:189:15) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499165] at exports.loadConfiguration (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/app-config.js:21:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499168] at module.exports.load (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration.js:25:34) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499171] at bootstrap (/home/vcap/deps/0/node_modules/@sap/approuter/lib/bootstrap.js:69:38) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499176] at Approuter.start (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:71:13) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499178] at Object.<anonymous> (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:178:6) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499181] at Module._compile (node:internal/modules/cjs/loader:1781:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499184] at Object..js (node:internal/modules/cjs/loader:1913:10) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499185] at Module.load (node:internal/modules/cjs/loader:1505:32) { (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499188] jse_shortmsg: 'xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory)', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499190] jse_info: {} (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499193] } (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.499195] Node.js v22.23.4 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.513863] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.513887] npm notice New major version of npm available! 10.9.9 -> 12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.513894] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.513896] npm notice To update run: npm install -g npm@12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.513899] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:13.068#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9184#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:11.570661] Exit status 1 (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:17.922171] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance 13a5bd0d-1335-4ba2-592f-2c40 (STDOUT, CELL)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:17.922207] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance 13a5bd0d-1335-4ba2-592f-2c40 (STDOUT, CELL)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:17.928522] Process has crashed with type: "web" (STDOUT, API)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:17.941509] App instance exited with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 payload: {"instance" => "13a5bd0d-1335-4ba2-592f-2c40", "index" => 0, "cell_id" => "77283d80-dfa7-40ba-ba4e-265aef112085", "reason" => "CRASHED", "exit_description" => "APP/PROC/WEB: Exited with status 1", "crash_count" => 1, "crash_timestamp" => 1793119217916318540, "version" => "ffc2104c-03b2-492a-add7-b3c363c3fe94"} (STDOUT, API)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:18.025186] Cell 684caff8-89cd-492b-be01-b3d0835f1763 creating container for instance e581df69-8991-4b7b-42d9-8f26 (STDOUT, CELL)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:18.101523] Exit status 137 (STDOUT, PROXY)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:18.974532] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance 13a5bd0d-1335-4ba2-592f-2c40 (STDOUT, CELL)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:19.401630] Security group rules were updated (STDOUT, CELL)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:19.489621] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully created container for instance e581df69-8991-4b7b-42d9-8f26 (STDOUT, CELL)#
+#2026 10 27 16:40:23.090#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9181#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:21.458362] Downloading droplet... (STDOUT, CELL)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:28.022571] Downloaded droplet (61.9M) (STDOUT, CELL)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:28.023071] Starting health monitoring of container (STDOUT, CELL)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:28.232045] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:28.607014] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:29.165427] > start (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:29.165462] > node node_modules/@sap/approuter/approuter.js (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:29.420908] {"written_at":"2026-10-27T16:40:29.418Z","written_ts":1793119229418000000,"csn_component":"-","correlation_id":"-","type":"log","logger":"nodejs-logger","layer":"/LoggingLibrary","level":"warning","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"","msg":"Dynamic log level switching not available"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.149683] {"written_at":"2026-10-27T16:40:30.147Z","written_ts":1793119230147000000,"csn_component":"-","correlation_id":"mvqww4w4","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqww4w4","msg":"Application router version 23.3.0"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.155059] {"written_at":"2026-10-27T16:40:30.154Z","written_ts":1793119230154000000,"csn_component":"-","correlation_id":"mvqww4wa","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.1.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqww4wa","msg":"No COOKIES environment variable"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.163798] /home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.163833] throw new VError('%s%s: %s', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.163839] ^ (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164598] VError: xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164627] at JsonValidator.validate (/home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30:11) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164637] at Object.validateXsApp (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/validators.js:189:15) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164640] at exports.loadConfiguration (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/app-config.js:21:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164643] at module.exports.load (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration.js:25:34) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164648] at bootstrap (/home/vcap/deps/0/node_modules/@sap/approuter/lib/bootstrap.js:69:38) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164650] at Approuter.start (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:71:13) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164653] at Object.<anonymous> (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:178:6) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164658] at Module._compile (node:internal/modules/cjs/loader:1781:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164668] at Object..js (node:internal/modules/cjs/loader:1913:10) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164675] at Module.load (node:internal/modules/cjs/loader:1505:32) { (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164688] jse_shortmsg: 'xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory)', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164692] jse_info: {} (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.164694] } (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.165390] Node.js v22.23.4 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.188229] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.188338] npm notice New major version of npm available! 10.9.9 -> 12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.188344] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.188354] npm notice To update run: npm install -g npm@12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.188357] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:33.131#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9191#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:30.282582] Exit status 1 (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.182#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:37.893100] Cell 684caff8-89cd-492b-be01-b3d0835f1763 stopping instance e581df69-8991-4b7b-42d9-8f26 (STDOUT, CELL)#
+#2026 10 27 16:40:43.182#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:37.893151] Cell 684caff8-89cd-492b-be01-b3d0835f1763 destroying container for instance e581df69-8991-4b7b-42d9-8f26 (STDOUT, CELL)#
+#2026 10 27 16:40:43.182#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:37.899498] Process has crashed with type: "web" (STDOUT, API)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:37.914342] App instance exited with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 payload: {"instance" => "e581df69-8991-4b7b-42d9-8f26", "index" => 0, "cell_id" => "684caff8-89cd-492b-be01-b3d0835f1763", "reason" => "CRASHED", "exit_description" => "APP/PROC/WEB: Exited with status 1", "crash_count" => 2, "crash_timestamp" => 1793119237887657208, "version" => "ffc2104c-03b2-492a-add7-b3c363c3fe94"} (STDOUT, API)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:37.990648] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance 2a9d938f-3081-40e5-50b0-137c (STDOUT, CELL)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:38.288979] Security group rules were updated (STDOUT, CELL)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:38.306532] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance 2a9d938f-3081-40e5-50b0-137c (STDOUT, CELL)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:38.387417] Exit status 137 (STDOUT, PROXY)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:38.447165] Downloading droplet... (STDOUT, CELL)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:39.641707] Downloaded droplet (STDOUT, CELL)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:39.641803] Starting health monitoring of container (STDOUT, CELL)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:39.720403] Invoking pre-start scripts. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:39.869739] Invoking start command. (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.191786] > start (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.191808] > node node_modules/@sap/approuter/approuter.js (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.336096] {"written_at":"2026-10-27T16:40:40.334Z","written_ts":1793119240334000000,"csn_component":"-","correlation_id":"-","type":"log","logger":"nodejs-logger","layer":"/LoggingLibrary","level":"warning","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"","msg":"Dynamic log level switching not available"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.710907] {"written_at":"2026-10-27T16:40:40.710Z","written_ts":1793119240710000000,"csn_component":"-","correlation_id":"mvqwwd1i","type":"log","logger":"nodejs-logger","layer":"/approuter","level":"info","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwwd1i","msg":"Application router version 23.3.0"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.714854] {"written_at":"2026-10-27T16:40:40.714Z","written_ts":1793119240714000000,"csn_component":"-","correlation_id":"mvqwwd1m","type":"log","logger":"nodejs-logger","layer":"/Configuration","level":"info","container_id":"10.32.3.6","component_type":"application","component_id":"f6a91934-e79d-4c81-a74d-1c41afa5cba8","component_name":"sprint","component_instance":-1,"source_instance":-1,"organization_id":"0c96b1ba-713e-4857-be5b-18d7792b679d","organization_name":"97db2ac6trial","space_id":"37f1a9da-a6e4-43ae-8bcb-6a90cc908d35","space_name":"dev","context_id":"mvqwwd1m","msg":"No COOKIES environment variable"} (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720017] /home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720029] throw new VError('%s%s: %s', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720033] ^ (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720343] VError: xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720356] at JsonValidator.validate (/home/vcap/deps/0/node_modules/@sap/approuter/lib/utils/JsonValidator.js:30:11) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720363] at Object.validateXsApp (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/validators.js:189:15) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720368] at exports.loadConfiguration (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration/app-config.js:21:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720371] at module.exports.load (/home/vcap/deps/0/node_modules/@sap/approuter/lib/configuration.js:25:34) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720375] at bootstrap (/home/vcap/deps/0/node_modules/@sap/approuter/lib/bootstrap.js:69:38) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720378] at Approuter.start (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:71:13) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720380] at Object.<anonymous> (/home/vcap/deps/0/node_modules/@sap/approuter/approuter.js:178:6) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720383] at Module._compile (node:internal/modules/cjs/loader:1781:14) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720386] at Object..js (node:internal/modules/cjs/loader:1913:10) (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720388] at Module.load (node:internal/modules/cjs/loader:1505:32) { (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720390] jse_shortmsg: 'xs-app.json/routes/1: Format validation failed (/home/vcap/app/resources/admin is not a directory)', (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720393] jse_info: {} (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720396] } (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.720399] Node.js v22.23.4 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.730139] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.730165] npm notice New major version of npm available! 10.9.9 -> 12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.730172] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.730174] npm notice To update run: npm install -g npm@12.2.1 (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.730176] npm notice (STDERR, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:40.784386] Exit status 1 (STDOUT, APP/PROC/WEB)#
+#2026 10 27 16:40:43.183#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-10320#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:42.721033] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully destroyed container for instance e581df69-8991-4b7b-42d9-8f26 (STDOUT, CELL)#
+#2026 10 27 16:40:53.297#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9200#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:47.343524] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance 2a9d938f-3081-40e5-50b0-137c (STDOUT, CELL)#
+#2026 10 27 16:40:53.297#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9200#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:47.343581] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance 2a9d938f-3081-40e5-50b0-137c (STDOUT, CELL)#
+#2026 10 27 16:40:53.297#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9200#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:47.350651] Process has crashed with type: "web" (STDOUT, API)#
+#2026 10 27 16:40:53.297#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9200#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:47.364352] App instance exited with guid f6a91934-e79d-4c81-a74d-1c41afa5cba8 payload: {"instance" => "2a9d938f-3081-40e5-50b0-137c", "index" => 0, "cell_id" => "77283d80-dfa7-40ba-ba4e-265aef112085", "reason" => "CRASHED", "exit_description" => "APP/PROC/WEB: Exited with status 1", "crash_count" => 3, "crash_timestamp" => 1793119247340516004, "version" => "ffc2104c-03b2-492a-add7-b3c363c3fe94"} (STDOUT, API)#
+#2026 10 27 16:40:53.297#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9200#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:47.511259] Exit status 137 (STDOUT, PROXY)#
+#2026 10 27 16:40:53.297#Z#DEBUG#b0440813-d224-11f1-bc6e-eeee0a877613.sprint#flowable-async-job-executor-thread-9200#
+[PollStartAppStatusExecution] f6a91934-e79d-4c81-a74d-1c41afa5cba8 [2026-10-27T16:40:48.405689] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance 2a9d938f-3081-40e5-50b0-137c (STDOUT, CELL)#

@@ -1,0 +1,277 @@
+<mvc:View
+    controllerName="psaaadmin.controller.Admin"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page
+        id="adminPage"
+        title="Admin Dashboard"
+        class="adminPage"
+        showNavButton="false"
+        enableScrolling="true">
+
+        <content>
+            <VBox
+                id="adminMainContainer"
+                class="adminMainContainer">
+
+                <!-- Welcome Header -->
+                <VBox
+                    id="adminWelcomeSection"
+                    class="adminWelcomeSection">
+
+                    <Title
+                        id="adminHeading"
+                        text="Project Administration"
+                        level="H1"
+                        class="adminHeading"/>
+
+                    <Text
+                        id="adminDescription"
+                        text="Welcome back! Manage your clients, employees and projects from one place."
+                        class="adminDescription"/>
+                </VBox>
+
+                <!-- KPI Section -->
+                <VBox
+                    id="adminKpiSection"
+                    class="adminSection">
+
+                    <Title
+                        id="overviewTitle"
+                        text="Overview"
+                        level="H2"
+                        class="adminSectionTitle"/>
+
+                    <HBox
+                        id="adminKpiContainer"
+                        wrap="Wrap"
+                        class="adminKpiContainer">
+
+                        <GenericTile
+                            id="employeesTile"
+                            header="Total Employees"
+                            subheader="Registered employees"
+                            frameType="OneByOne"
+                            class="adminKpiTile employeeKpiTile"
+                            press=".onEmployees">
+
+                            <TileContent id="employeesTileContent">
+                                <NumericContent
+                                    id="employeesKpi"
+                                    value="{adminModel>/employees}"
+                                    icon="sap-icon://employee"
+                                    valueColor="Neutral"/>
+                            </TileContent>
+                        </GenericTile>
+
+                        <GenericTile
+                            id="clientsTile"
+                            header="Total Clients"
+                            subheader="Registered clients"
+                            frameType="OneByOne"
+                            class="adminKpiTile clientKpiTile"
+                            press=".onClients">
+
+                            <TileContent id="clientsTileContent">
+                                <NumericContent
+                                    id="clientsKpi"
+                                    value="{adminModel>/clients}"
+                                    icon="sap-icon://customer"
+                                    valueColor="Neutral"/>
+                            </TileContent>
+                        </GenericTile>
+
+                        <GenericTile
+                            id="projectsTile"
+                            header="Total Projects"
+                            subheader="Projects in the system"
+                            frameType="OneByOne"
+                            class="adminKpiTile projectKpiTile"
+                            press=".onProjects">
+
+                            <TileContent id="projectsTileContent">
+                                <NumericContent
+                                    id="projectsKpi"
+                                    value="{adminModel>/projects}"
+                                    icon="sap-icon://folder-full"
+                                    valueColor="Neutral"/>
+                            </TileContent>
+                        </GenericTile>
+
+                    </HBox>
+                </VBox>
+
+                <!-- Management Section -->
+                <VBox
+                    id="adminManagementSection"
+                    class="adminSection">
+
+                    <Title
+                        id="administrationSectionTitle"
+                        text="Management"
+                        level="H2"
+                        class="adminSectionTitle"/>
+
+                    <Text
+                        id="managementDescription"
+                        text="Choose a module to manage your organization's records."
+                        class="adminSectionDescription"/>
+
+                    <HBox
+                        id="adminManagementCards"
+                        wrap="Wrap"
+                        class="adminManagementCards">
+
+                        <!-- Client Management -->
+                        <VBox
+                            id="clientManagementCard"
+                            class="adminManagementCard clientManagementCard"
+                            width="100%">
+
+                            <HBox
+                                id="clientCardHeader"
+                                alignItems="Center"
+                                class="adminCardHeader">
+
+                                <core:Icon
+                                    id="clientCardIcon"
+                                    src="sap-icon://customer"
+                                    size="1.5rem"
+                                    class="adminCardIcon clientCardIcon"/>
+
+                                <VBox id="clientCardTitles">
+                                    <Title
+                                        id="clientCardTitle"
+                                        text="Client Management"
+                                        level="H3"
+                                        class="adminCardTitle"/>
+
+                                    <Text
+                                        id="clientCardSubtitle"
+                                        text="Manage client profiles and contacts"
+                                        class="adminCardSubtitle"/>
+                                </VBox>
+                            </HBox>
+
+                            <Text
+                                id="clientCardDescription"
+                                text="Create, update and maintain client information and contact details."
+                                class="adminCardDescription"/>
+
+                            <Button
+                                id="clientManagementButton"
+                                text="Manage Clients"
+                                icon="sap-icon://arrow-right"
+                                iconFirst="false"
+                                type="Emphasized"
+                                width="100%"
+                                press=".onClients"/>
+                        </VBox>
+
+                        <!-- Employee Management -->
+                        <VBox
+                            id="employeeManagementCard"
+                            class="adminManagementCard employeeManagementCard"
+                            width="100%">
+
+                            <HBox
+                                id="employeeCardHeader"
+                                alignItems="Center"
+                                class="adminCardHeader">
+
+                                <core:Icon
+                                    id="employeeCardIcon"
+                                    src="sap-icon://employee"
+                                    size="1.5rem"
+                                    class="adminCardIcon employeeCardIcon"/>
+
+                                <VBox id="employeeCardTitles">
+                                    <Title
+                                        id="employeeCardTitle"
+                                        text="Employee Management"
+                                        level="H3"
+                                        class="adminCardTitle"/>
+
+                                    <Text
+                                        id="employeeCardSubtitle"
+                                        text="Manage your team"
+                                        class="adminCardSubtitle"/>
+                                </VBox>
+                            </HBox>
+
+                            <Text
+                                id="employeeCardDescription"
+                                text="Maintain employee records, designations, departments and status."
+                                class="adminCardDescription"/>
+
+                            <Button
+                                id="employeeManagementButton"
+                                text="Manage Employees"
+                                icon="sap-icon://arrow-right"
+                                iconFirst="false"
+                                type="Emphasized"
+                                width="100%"
+                                press=".onEmployees"/>
+                        </VBox>
+
+                        <!-- Project Management -->
+                        <VBox
+                            id="projectManagementCard"
+                            class="adminManagementCard projectManagementCard"
+                            width="100%">
+
+                            <HBox
+                                id="projectCardHeader"
+                                alignItems="Center"
+                                class="adminCardHeader">
+
+                                <core:Icon
+                                    id="projectCardIcon"
+                                    src="sap-icon://folder-full"
+                                    size="1.5rem"
+                                    class="adminCardIcon projectCardIcon"/>
+
+                                <VBox id="projectCardTitles">
+                                    <Title
+                                        id="projectCardTitle"
+                                        text="Project Management"
+                                        level="H3"
+                                        class="adminCardTitle"/>
+
+                                    <Text
+                                        id="projectCardSubtitle"
+                                        text="Organize projects and assignments"
+                                        class="adminCardSubtitle"/>
+                                </VBox>
+                            </HBox>
+
+                            <Text
+                                id="projectCardDescription"
+                                text="Create projects, associate clients and managers, and track project status and budgets."
+                                class="adminCardDescription"/>
+
+                            <Button
+                                id="projectManagementButton"
+                                text="Manage Projects"
+                                icon="sap-icon://arrow-right"
+                                iconFirst="false"
+                                type="Emphasized"
+                                width="100%"
+                                press=".onProjects"/>
+                        </VBox>
+
+                    </HBox>
+                </VBox>
+
+                <!-- Footer -->
+                <Text
+                    id="adminFooter"
+                    text="Project Administration • Manage your organization efficiently"
+                    class="adminFooter"/>
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

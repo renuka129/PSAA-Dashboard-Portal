@@ -1,0 +1,20 @@
+{
+  "name": "psaa-manager",
+  "version": "0.0.1",
+  "description": "An SAP Fiori application.",
+  "keywords": [
+    "ui5",
+    "openui5",
+    "sapui5"
+  ],
+  "main": "webapp/index.html",
+  "devDependencies": {
+    "@sap-ux/eslint-plugin-fiori-tools": "^10.0.0",
+    "@sap/ux-ui5-tooling": "^1.22.0",
+    "@ui5/cli": "^4.0.33",
+    "eslint": "^10"
+  },
+  "scripts": {
+    "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
+  }
+}

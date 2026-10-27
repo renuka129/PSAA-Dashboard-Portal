@@ -1,0 +1,37 @@
+{
+  "welcomeFile": "/home/",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/home/(.*)$",
+      "target": "$1",
+      "localDir": "resources/home",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/admin/(.*)$",
+      "target": "$1",
+      "localDir": "resources/admin",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/manager/(.*)$",
+      "target": "$1",
+      "localDir": "resources/manager",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/employee/(.*)$",
+      "target": "$1",
+      "localDir": "resources/employee",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/(.*)$",
+      "target": "$1",
+      "destination": "srv-api",
+      "authenticationType": "xsuaa",
+      "csrfProtection": true
+    }
+  ]
+}

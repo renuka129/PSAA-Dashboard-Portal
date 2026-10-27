@@ -1,0 +1,42 @@
+
+{
+  "xsappname": "sprint-auth-97db2ac6trial",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Admin",
+      "description": "Administrator access"
+    },
+    {
+      "name": "$XSAPPNAME.Manager",
+      "description": "Manager access"
+    },
+    {
+      "name": "$XSAPPNAME.Employee",
+      "description": "Employee access"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Admin",
+      "description": "Administrator",
+      "scope-references": [
+        "$XSAPPNAME.Admin"
+      ]
+    },
+    {
+      "name": "Manager",
+      "description": "Manager",
+      "scope-references": [
+        "$XSAPPNAME.Manager"
+      ]
+    },
+    {
+      "name": "Employee",
+      "description": "Employee",
+      "scope-references": [
+        "$XSAPPNAME.Employee"
+      ]
+    }
+  ]
+}

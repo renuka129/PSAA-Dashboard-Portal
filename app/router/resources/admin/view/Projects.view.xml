@@ -1,0 +1,106 @@
+<mvc:View
+    controllerName="psaaadmin.controller.Projects"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page
+        id="projectsPage"
+        title="Project Management"
+        showNavButton="true"
+        navButtonPress=".onNavBack">
+
+        <content>
+            <VBox id="projectsContainer" class="sapUiMediumMargin">
+
+                <Toolbar id="projectsToolbar">
+                    <Title id="projectsTitle" text="Projects" level="H2"/>
+                    <ToolbarSpacer id="projectsToolbarSpacer"/>
+
+                    <Button
+                        id="refreshProjectsButton"
+                        text="Refresh"
+                        icon="sap-icon://refresh"
+                        press=".onRefresh"/>
+
+                    <Button
+                        id="addProjectButton"
+                        text="Add Project"
+                        icon="sap-icon://add"
+                        type="Emphasized"
+                        press=".onAddProject"/>
+                </Toolbar>
+
+                <SearchField
+                    id="projectSearchField"
+                    width="100%"
+                    placeholder="Search by project code or name"
+                    liveChange=".onSearch"/>
+
+                <Table
+                    id="projectsTable"
+                    items="{projectsModel>/projects}"
+                    growing="true"
+                    growingThreshold="10"
+                    noDataText="No projects found">
+
+                    <columns>
+                        <Column id="projectCodeColumn">
+                            <Text id="projectCodeHeader" text="Project Code"/>
+                        </Column>
+                        <Column id="projectNameColumn">
+                            <Text id="projectNameHeader" text="Project Name"/>
+                        </Column>
+                        <Column id="projectClientColumn">
+                            <Text id="projectClientHeader" text="Client"/>
+                        </Column>
+                        <Column id="projectManagerColumn">
+                            <Text id="projectManagerHeader" text="Manager"/>
+                        </Column>
+                        <Column id="projectStatusColumn">
+                            <Text id="projectStatusHeader" text="Status"/>
+                        </Column>
+                        <Column id="projectBudgetColumn" hAlign="End">
+                            <Text id="projectBudgetHeader" text="Budget"/>
+                        </Column>
+                        <Column id="projectActionsColumn" hAlign="Center">
+                            <Text id="projectActionsHeader" text="Actions"/>
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem id="projectRow">
+                            <cells>
+                                <Text id="projectCodeCell" text="{projectsModel>code}"/>
+                                <Text id="projectNameCell" text="{projectsModel>name}"/>
+                                <Text id="projectClientCell" text="{projectsModel>clientName}"/>
+                                <Text id="projectManagerCell" text="{projectsModel>managerName}"/>
+                                <ObjectStatus id="projectStatusCell" text="{projectsModel>status}"/>
+                                <ObjectNumber
+                                    id="projectBudgetCell"
+                                    number="{projectsModel>budgetAmount}"
+                                    unit="{projectsModel>currency}"/>
+
+                                <HBox id="projectActionButtons" justifyContent="Center">
+                                    <Button
+                                        id="editProjectButton"
+                                        icon="sap-icon://edit"
+                                        type="Transparent"
+                                        tooltip="Edit project"
+                                        press=".onEditProject"/>
+
+                                    <Button
+                                        id="deleteProjectButton"
+                                        icon="sap-icon://delete"
+                                        type="Transparent"
+                                        tooltip="Delete project"
+                                        press=".onDeleteProject"/>
+                                </HBox>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+
+                </Table>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

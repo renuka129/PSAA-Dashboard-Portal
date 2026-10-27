@@ -1,0 +1,943 @@
+<mvc:View
+    id="managerView"
+    controllerName="psaamanager.controller.Manager"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page
+        id="managerPage"
+        title="PSAA | Manager Dashboard"
+        class="sapUiResponsiveContentPadding">
+
+        <content>
+            <VBox
+                id="managerContent"
+                class="sapUiSmallMargin"
+                width="100%">
+
+                <!-- Dashboard Header -->
+                <Toolbar id="managerToolbar">
+                    <Title
+                        id="managerDashboardTitle"
+                        text="Manager Dashboard"
+                        level="H1"/>
+
+                    <ToolbarSpacer id="managerToolbarSpacer"/>
+
+                    <Button
+                        id="refreshManagerButton"
+                        text="Refresh"
+                        icon="sap-icon://refresh"
+                        type="Transparent"
+                        press=".onRefresh"/>
+                </Toolbar>
+
+                <MessageStrip
+                    id="managerInfoMessage"
+                    text="Monitor project progress, task activity, budgets, invoices, and employee timesheet approvals."
+                    type="Information"
+                    showIcon="true"
+                    showCloseButton="false"
+                    class="sapUiSmallMarginBottom"/>
+
+                <!-- Business Overview -->
+                <Title
+                    id="businessOverviewTitle"
+                    text="Business Overview"
+                    level="H2"
+                    class="sapUiSmallMarginTop"/>
+
+                <HBox
+                    id="managerKpiContainer"
+                    class="managerKpiContainer sapUiSmallMarginBottom"
+                    wrap="Wrap"
+                    alignItems="Stretch">
+
+                    <!-- Pending Timesheets -->
+                    <VBox
+                        id="pendingTimesheetsCard"
+                        class="managerKpiCard pendingKpiCard">
+
+                        <Label
+                            id="pendingTimesheetsLabel"
+                            text="Pending Timesheets"/>
+
+                        <ObjectNumber
+                            id="pendingTimesheetsNumber"
+                            number="{managerModel>/pendingCount}"
+                            state="Warning"/>
+
+                        <Text
+                            id="pendingTimesheetsDescription"
+                            text="Awaiting manager review"/>
+                    </VBox>
+
+                    <!-- Approved Timesheets -->
+                    <VBox
+                        id="approvedTimesheetsCard"
+                        class="managerKpiCard approvedKpiCard">
+
+                        <Label
+                            id="approvedTimesheetsLabel"
+                            text="Approved Timesheets"/>
+
+                        <ObjectNumber
+                            id="approvedTimesheetsNumber"
+                            number="{managerModel>/approvedCount}"
+                            state="Success"/>
+
+                        <Text
+                            id="approvedTimesheetsDescription"
+                            text="Successfully approved"/>
+                    </VBox>
+
+                    <!-- Rejected Timesheets -->
+                    <VBox
+                        id="rejectedTimesheetsCard"
+                        class="managerKpiCard rejectedKpiCard">
+
+                        <Label
+                            id="rejectedTimesheetsLabel"
+                            text="Rejected Timesheets"/>
+
+                        <ObjectNumber
+                            id="rejectedTimesheetsNumber"
+                            number="{managerModel>/rejectedCount}"
+                            state="Error"/>
+
+                        <Text
+                            id="rejectedTimesheetsDescription"
+                            text="Returned for correction"/>
+                    </VBox>
+
+                    <!-- Active Projects -->
+                    <VBox
+                        id="activeProjectsCard"
+                        class="managerKpiCard">
+
+                        <Label
+                            id="activeProjectsLabel"
+                            text="Active Projects"/>
+
+                        <ObjectNumber
+                            id="activeProjectsNumber"
+                            number="{managerModel>/activeProjectsCount}"
+                            state="Information"/>
+
+                        <Text
+                            id="activeProjectsDescription"
+                            text="Projects currently in progress"/>
+                    </VBox>
+
+                    <!-- Active Tasks -->
+                    <VBox
+                        id="activeTasksCard"
+                        class="managerKpiCard">
+
+                        <Label
+                            id="activeTasksLabel"
+                            text="Active Tasks"/>
+
+                        <ObjectNumber
+                            id="activeTasksNumber"
+                            number="{managerModel>/activeTasksCount}"
+                            state="Information"/>
+
+                        <Text
+                            id="activeTasksDescription"
+                            text="Open or in-progress tasks"/>
+                    </VBox>
+
+                    <!-- Budget Risks -->
+                    <VBox
+                        id="budgetRisksCard"
+                        class="managerKpiCard rejectedKpiCard">
+
+                        <Label
+                            id="budgetRisksLabel"
+                            text="Budget Risks"/>
+
+                        <ObjectNumber
+                            id="budgetRisksNumber"
+                            number="{managerModel>/atRiskBudgetsCount}"
+                            state="Error"/>
+
+                        <Text
+                            id="budgetRisksDescription"
+                            text="At-risk or breached budgets"/>
+                    </VBox>
+
+                    <!-- Draft Invoices -->
+                    <VBox
+                        id="draftInvoicesCard"
+                        class="managerKpiCard pendingKpiCard">
+
+                        <Label
+                            id="draftInvoicesLabel"
+                            text="Draft Invoices"/>
+
+                        <ObjectNumber
+                            id="draftInvoicesNumber"
+                            number="{managerModel>/draftInvoicesCount}"
+                            state="Warning"/>
+
+                        <Text
+                            id="draftInvoicesDescription"
+                            text="Invoices not yet issued"/>
+                    </VBox>
+
+                    <!-- Outstanding Invoices -->
+                    <VBox
+                        id="outstandingInvoicesCard"
+                        class="managerKpiCard approvedKpiCard">
+
+                        <Label
+                            id="outstandingInvoicesLabel"
+                            text="Outstanding Invoices"/>
+
+                        <ObjectNumber
+                            id="outstandingInvoicesNumber"
+                            number="{managerModel>/outstandingInvoiceAmount}"
+                            unit="INR"
+                            state="Information"/>
+
+                        <Text
+                            id="outstandingInvoicesDescription"
+                            text="Total amount of issued invoices"/>
+                    </VBox>
+
+                    <!-- Total Budget -->
+                    <VBox
+                        id="totalBudgetKpiCard"
+                        class="managerKpiCard">
+
+                        <Label
+                            id="totalBudgetKpiLabel"
+                            text="Total Budget"/>
+
+                        <ObjectNumber
+                            id="totalBudgetKpiNumber"
+                            number="{managerModel>/totalBudgetAmount}"
+                            unit="INR"
+                            state="Information"/>
+
+                        <Text
+                            id="totalBudgetKpiDescription"
+                            text="Combined project budgets"/>
+                    </VBox>
+
+                    <!-- Consumed Budget -->
+                    <VBox
+                        id="consumedBudgetKpiCard"
+                        class="managerKpiCard pendingKpiCard">
+
+                        <Label
+                            id="consumedBudgetKpiLabel"
+                            text="Consumed Budget"/>
+
+                        <ObjectNumber
+                            id="consumedBudgetKpiNumber"
+                            number="{managerModel>/totalConsumedBudget}"
+                            unit="INR"
+                            state="Warning"/>
+
+                        <Text
+                            id="consumedBudgetKpiDescription"
+                            text="Approved labor cost"/>
+                    </VBox>
+
+                    <!-- Remaining Budget -->
+                    <VBox
+                        id="remainingBudgetKpiCard"
+                        class="managerKpiCard approvedKpiCard">
+
+                        <Label
+                            id="remainingBudgetKpiLabel"
+                            text="Remaining Budget"/>
+
+                        <ObjectNumber
+                            id="remainingBudgetKpiNumber"
+                            number="{managerModel>/totalRemainingBudget}"
+                            unit="INR"
+                            state="{= ${managerModel>/totalRemainingBudget} &lt; 0 ? 'Error' : 'Success' }"/>
+
+                        <Text
+                            id="remainingBudgetKpiDescription"
+                            text="Budget left to use"/>
+                    </VBox>
+
+                </HBox>
+
+                <!-- Project Overview -->
+                <Panel
+                    id="managerProjectsPanel"
+                    headerText="Project Overview"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <Table
+                            id="managerProjectsTable"
+                            items="{managerModel>/projects}"
+                            noDataText="No projects available"
+                            growing="true"
+                            growingThreshold="10"
+                            width="100%">
+
+                            <columns>
+                                <Column id="projectNameColumn">
+                                    <Text
+                                        id="projectNameHeader"
+                                        text="Project"/>
+                                </Column>
+
+                                <Column id="projectStatusColumn">
+                                    <Text
+                                        id="projectStatusHeader"
+                                        text="Status"/>
+                                </Column>
+
+                                <Column
+                                    id="projectBudgetColumn"
+                                    hAlign="End"
+                                    minScreenWidth="Tablet"
+                                    demandPopin="true">
+
+                                    <Text
+                                        id="projectBudgetHeader"
+                                        text="Budget"/>
+                                </Column>
+
+                                <Column
+                                    id="projectCurrencyColumn"
+                                    minScreenWidth="Tablet"
+                                    demandPopin="true">
+
+                                    <Text
+                                        id="projectCurrencyHeader"
+                                        text="Currency"/>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem id="projectRow">
+                                    <cells>
+                                        <Text
+                                            id="projectNameCell"
+                                            text="{managerModel>projectName}"/>
+
+                                        <ObjectStatus
+                                            id="projectStatusCell"
+                                            text="{managerModel>status}"
+                                            state="Information"/>
+
+                                        <ObjectNumber
+                                            id="projectBudgetCell"
+                                            number="{managerModel>budgetAmount}"
+                                            unit="{managerModel>currency}"/>
+
+                                        <Text
+                                            id="projectCurrencyCell"
+                                            text="{managerModel>currency}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+                    </content>
+                </Panel>
+
+                <!-- Task Overview -->
+                <Panel
+                    id="managerTasksPanel"
+                    headerText="Task Overview"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <Table
+                            id="managerTasksTable"
+                            items="{managerModel>/tasks}"
+                            noDataText="No tasks available"
+                            growing="true"
+                            growingThreshold="10"
+                            width="100%">
+
+                            <columns>
+                                <Column id="taskNameColumn">
+                                    <Text
+                                        id="taskNameHeader"
+                                        text="Task"/>
+                                </Column>
+
+                                <Column id="taskStatusColumn">
+                                    <Text
+                                        id="taskStatusHeader"
+                                        text="Status"/>
+                                </Column>
+
+                                <Column
+                                    id="taskDueDateColumn"
+                                    minScreenWidth="Tablet"
+                                    demandPopin="true">
+
+                                    <Text
+                                        id="taskDueDateHeader"
+                                        text="Due Date"/>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem id="taskRow">
+                                    <cells>
+                                        <Text
+                                            id="taskNameCell"
+                                            text="{managerModel>taskName}"/>
+
+                                        <ObjectStatus
+                                            id="taskStatusCell"
+                                            text="{managerModel>status}"
+                                            state="Information"/>
+
+                                        <Text
+                                            id="taskDueDateCell"
+                                            text="{managerModel>dueDate}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+                    </content>
+                </Panel>
+
+                <!-- Budget Monitoring -->
+                <Panel
+                    id="managerBudgetsPanel"
+                    headerText="Budget Monitoring"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <Table
+                            id="managerBudgetsTable"
+                            items="{managerModel>/budgets}"
+                            noDataText="No budget records available"
+                            growing="true"
+                            growingThreshold="10"
+                            width="100%">
+
+                            <columns>
+                                <Column id="budgetProjectColumn">
+                                    <Text
+                                        id="budgetProjectHeader"
+                                        text="Project"/>
+                                </Column>
+
+                                <Column id="budgetStatusColumn">
+                                    <Text
+                                        id="budgetStatusHeader"
+                                        text="Budget Status"/>
+                                </Column>
+
+                                <Column
+                                    id="totalBudgetColumn"
+                                    hAlign="End">
+
+                                    <Text
+                                        id="totalBudgetHeader"
+                                        text="Total Budget"/>
+                                </Column>
+
+                                <Column
+                                    id="consumedBudgetColumn"
+                                    hAlign="End"
+                                    minScreenWidth="Tablet"
+                                    demandPopin="true">
+
+                                    <Text
+                                        id="consumedBudgetHeader"
+                                        text="Consumed Amount"/>
+                                </Column>
+
+                                <Column
+                                    id="remainingBudgetColumn"
+                                    hAlign="End"
+                                    minScreenWidth="Tablet"
+                                    demandPopin="true">
+
+                                    <Text
+                                        id="remainingBudgetHeader"
+                                        text="Remaining Budget"/>
+                                </Column>
+
+                                <Column
+                                    id="budgetUtilizationColumn"
+                                    minScreenWidth="Tablet"
+                                    demandPopin="true">
+
+                                    <Text
+                                        id="budgetUtilizationHeader"
+                                        text="Budget Utilization"/>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem id="budgetRow">
+                                    <cells>
+                                        <Text
+                                            id="budgetProjectCell"
+                                            text="{managerModel>projectName}"/>
+
+                                        <ObjectStatus
+                                            id="budgetStatusCell"
+                                            text="{managerModel>status}"
+                                            state="{= ${managerModel>status} === 'BREACHED' ? 'Error' : ${managerModel>status} === 'AT_RISK' ? 'Warning' : 'Success' }"/>
+
+                                        <ObjectNumber
+                                            id="totalBudgetCell"
+                                            number="{managerModel>budgetAmount}"
+                                            unit="{managerModel>currency}"/>
+
+                                        <ObjectNumber
+                                            id="consumedBudgetCell"
+                                            number="{managerModel>consumedAmount}"
+                                            unit="{managerModel>currency}"/>
+
+                                        <ObjectNumber
+                                            id="remainingBudgetCell"
+                                            number="{managerModel>remainingAmount}"
+                                            unit="{managerModel>currency}"
+                                            state="{= ${managerModel>remainingAmount} &lt; 0 ? 'Error' : 'Success' }"/>
+
+                                        <VBox id="budgetUtilizationContainer">
+                                            <ProgressIndicator
+                                                id="budgetUtilizationProgress"
+                                                percentValue="{managerModel>utilizationPct}"
+                                                displayValue="{managerModel>utilizationText}"
+                                                state="{managerModel>progressState}"
+                                                width="12rem"/>
+                                        </VBox>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+                    </content>
+                </Panel>
+
+                <!-- Invoice Overview -->
+                <Panel
+                    id="managerInvoicesPanel"
+                    headerText="Invoice Overview"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <Table
+                            id="managerInvoicesTable"
+                            items="{managerModel>/invoices}"
+                            noDataText="No invoices available"
+                            growing="true"
+                            growingThreshold="10"
+                            width="100%">
+
+                            <columns>
+                                <Column id="invoiceNumberColumn">
+                                    <Text
+                                        id="invoiceNumberHeader"
+                                        text="Invoice Number"/>
+                                </Column>
+
+                                <Column id="invoiceProjectColumn">
+                                    <Text
+                                        id="invoiceProjectHeader"
+                                        text="Project"/>
+                                </Column>
+
+                                <Column id="invoiceStatusColumn">
+                                    <Text
+                                        id="invoiceStatusHeader"
+                                        text="Status"/>
+                                </Column>
+
+                                <Column
+                                    id="invoiceAmountColumn"
+                                    hAlign="End"
+                                    minScreenWidth="Tablet"
+                                    demandPopin="true">
+
+                                    <Text
+                                        id="invoiceAmountHeader"
+                                        text="Amount"/>
+                                </Column>
+
+                                <Column
+                                    id="invoiceDueDateColumn"
+                                    minScreenWidth="Tablet"
+                                    demandPopin="true">
+
+                                    <Text
+                                        id="invoiceDueDateHeader"
+                                        text="Due Date"/>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem id="invoiceRow">
+                                    <cells>
+                                        <Text
+                                            id="invoiceNumberCell"
+                                            text="{managerModel>invoiceNo}"/>
+
+                                        <Text
+                                            id="invoiceProjectCell"
+                                            text="{managerModel>projectName}"/>
+
+                                        <ObjectStatus
+                                            id="invoiceStatusCell"
+                                            text="{managerModel>status}"
+                                            state="{= ${managerModel>status} === 'PAID' ? 'Success' : ${managerModel>status} === 'ISSUED' ? 'Warning' : 'None' }"/>
+
+                                        <ObjectNumber
+                                            id="invoiceAmountCell"
+                                            number="{managerModel>invoiceAmount}"
+                                            unit="{managerModel>currency}"/>
+
+                                        <Text
+                                            id="invoiceDueDateCell"
+                                            text="{managerModel>dueDate}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+                    </content>
+                </Panel>
+
+                <!-- Timesheet Approvals -->
+                <Panel
+                    id="approvalPanel"
+                    headerText="Timesheet Approvals"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <VBox
+                            id="timesheetApprovalContent"
+                            width="100%">
+
+                            <HBox
+                                id="timesheetFilterToolbar"
+                                wrap="Wrap"
+                                alignItems="Center"
+                                class="sapUiSmallMarginBottom">
+
+                                <SegmentedButton
+                                    id="timesheetFilter"
+                                    selectedKey="{managerModel>/selectedFilter}"
+                                    selectionChange=".onFilterChange">
+
+                                    <items>
+                                        <SegmentedButtonItem
+                                            id="allTimesheetsFilter"
+                                            key="ALL"
+                                            text="All"/>
+
+                                        <SegmentedButtonItem
+                                            id="pendingTimesheetsFilter"
+                                            key="SUBMITTED"
+                                            text="Pending"/>
+
+                                        <SegmentedButtonItem
+                                            id="approvedTimesheetsFilter"
+                                            key="APPROVED"
+                                            text="Approved"/>
+
+                                        <SegmentedButtonItem
+                                            id="rejectedTimesheetsFilter"
+                                            key="REJECTED"
+                                            text="Rejected"/>
+                                    </items>
+
+                                </SegmentedButton>
+
+                                <SearchField
+                                    id="timesheetSearch"
+                                    width="20rem"
+                                    placeholder="Search employee or project"
+                                    value="{managerModel>/searchQuery}"
+                                    liveChange=".onSearchTimesheets"
+                                    class="sapUiSmallMarginBegin"/>
+
+                            </HBox>
+
+                            <Table
+                                id="approvalTable"
+                                items="{managerModel>/timesheets}"
+                                mode="SingleSelectLeft"
+                                selectionChange=".onTimesheetSelection"
+                                noDataText="No timesheets found"
+                                growing="true"
+                                growingThreshold="10"
+                                width="100%">
+
+                                <columns>
+                                    <Column id="timesheetEmployeeColumn">
+                                        <Text
+                                            id="timesheetEmployeeHeader"
+                                            text="Employee"/>
+                                    </Column>
+
+                                    <Column id="timesheetProjectColumn">
+                                        <Text
+                                            id="timesheetProjectHeader"
+                                            text="Project"/>
+                                    </Column>
+
+                                    <Column
+                                        id="timesheetWeekStartColumn"
+                                        minScreenWidth="Tablet"
+                                        demandPopin="true">
+
+                                        <Text
+                                            id="timesheetWeekStartHeader"
+                                            text="Week Start"/>
+                                    </Column>
+
+                                    <Column
+                                        id="timesheetWeekEndColumn"
+                                        minScreenWidth="Tablet"
+                                        demandPopin="true">
+
+                                        <Text
+                                            id="timesheetWeekEndHeader"
+                                            text="Week End"/>
+                                    </Column>
+
+                                    <Column
+                                        id="timesheetHoursColumn"
+                                        hAlign="End">
+
+                                        <Text
+                                            id="timesheetHoursHeader"
+                                            text="Total Hours"/>
+                                    </Column>
+
+                                    <Column id="timesheetStatusColumn">
+                                        <Text
+                                            id="timesheetStatusHeader"
+                                            text="Status"/>
+                                    </Column>
+                                </columns>
+
+                                <items>
+                                    <ColumnListItem
+                                        id="timesheetRow"
+                                        type="Active">
+
+                                        <cells>
+                                            <Text
+                                                id="timesheetEmployeeCell"
+                                                text="{managerModel>employeeName}"/>
+
+                                            <Text
+                                                id="timesheetProjectCell"
+                                                text="{managerModel>projectName}"/>
+
+                                            <Text
+                                                id="timesheetWeekStartCell"
+                                                text="{managerModel>weekStart}"/>
+
+                                            <Text
+                                                id="timesheetWeekEndCell"
+                                                text="{managerModel>weekEnd}"/>
+
+                                            <ObjectNumber
+                                                id="timesheetHoursCell"
+                                                number="{managerModel>totalHours}"
+                                                unit="hrs"/>
+
+                                            <ObjectStatus
+                                                id="timesheetStatusCell"
+                                                text="{managerModel>status}"
+                                                state="{managerModel>statusState}"/>
+                                        </cells>
+
+                                    </ColumnListItem>
+                                </items>
+
+                            </Table>
+
+                        </VBox>
+                    </content>
+                </Panel>
+
+                <!-- Selected Timesheet Details -->
+                <Panel
+                    id="detailsPanel"
+                    headerText="Selected Timesheet Details"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <VBox
+                            id="timesheetDetailsContent"
+                            class="sapUiSmallMargin"
+                            width="100%">
+
+                            <Title
+                                id="timesheetEntriesTitle"
+                                text="Timesheet Entries"
+                                level="H3"/>
+
+                            <HBox
+                                id="selectedTimesheetHoursContainer"
+                                alignItems="Center"
+                                class="sapUiSmallMarginBottom">
+
+                                <Label
+                                    id="selectedTotalHoursLabel"
+                                    text="Total Hours:"
+                                    class="sapUiTinyMarginEnd"/>
+
+                                <ObjectNumber
+                                    id="selectedTotalHoursNumber"
+                                    number="{managerModel>/selectedTotalHours}"
+                                    unit="hrs"
+                                    emphasized="true"/>
+
+                            </HBox>
+
+                            <Table
+                                id="managerEntriesTable"
+                                items="{managerModel>/entries}"
+                                noDataText="Select a timesheet to view its entries"
+                                growing="true"
+                                growingThreshold="10"
+                                width="100%">
+
+                                <columns>
+                                    <Column id="entryWorkDateColumn">
+                                        <Text
+                                            id="entryWorkDateHeader"
+                                            text="Work Date"/>
+                                    </Column>
+
+                                    <Column id="entryTaskColumn">
+                                        <Text
+                                            id="entryTaskHeader"
+                                            text="Task"/>
+                                    </Column>
+
+                                    <Column
+                                        id="entryHoursColumn"
+                                        hAlign="End">
+
+                                        <Text
+                                            id="entryHoursHeader"
+                                            text="Hours"/>
+                                    </Column>
+
+                                    <Column id="entryBillableColumn">
+                                        <Text
+                                            id="entryBillableHeader"
+                                            text="Billable"/>
+                                    </Column>
+
+                                    <Column
+                                        id="entryNotesColumn"
+                                        minScreenWidth="Tablet"
+                                        demandPopin="true">
+
+                                        <Text
+                                            id="entryNotesHeader"
+                                            text="Notes"/>
+                                    </Column>
+                                </columns>
+
+                                <items>
+                                    <ColumnListItem id="timesheetEntryRow">
+                                        <cells>
+                                            <Text
+                                                id="entryWorkDateCell"
+                                                text="{managerModel>workDate}"/>
+
+                                            <Text
+                                                id="entryTaskCell"
+                                                text="{managerModel>taskName}"/>
+
+                                            <ObjectNumber
+                                                id="entryHoursCell"
+                                                number="{managerModel>hours}"
+                                                unit="hrs"/>
+
+                                            <ObjectStatus
+                                                id="entryBillableCell"
+                                                text="{= ${managerModel>billable} ? 'Yes' : 'No' }"
+                                                state="{= ${managerModel>billable} ? 'Success' : 'None' }"/>
+
+                                            <Text
+                                                id="entryNotesCell"
+                                                text="{managerModel>notes}"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+
+                            </Table>
+
+                            <!-- Rejection Reason -->
+                            <Label
+                                id="rejectReasonLabel"
+                                text="Rejection Reason"
+                                labelFor="rejectReasonInput"
+                                class="sapUiSmallMarginTop"/>
+
+                            <TextArea
+                                id="rejectReasonInput"
+                                width="100%"
+                                rows="3"
+                                maxLength="500"
+                                placeholder="Enter a reason if rejecting the timesheet"/>
+
+                            <!-- Approval Actions -->
+                            <HBox
+                                id="timesheetApprovalActions"
+                                justifyContent="End"
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop">
+
+                                <Button
+                                    id="approveButton"
+                                    text="Approve"
+                                    icon="sap-icon://accept"
+                                    type="Accept"
+                                    enabled="{managerModel>/canReview}"
+                                    press=".onApprove"
+                                    class="sapUiTinyMarginEnd"/>
+
+                                <Button
+                                    id="rejectButton"
+                                    text="Reject"
+                                    icon="sap-icon://decline"
+                                    type="Reject"
+                                    enabled="{managerModel>/canReview}"
+                                    press=".onReject"/>
+
+                            </HBox>
+
+                        </VBox>
+                    </content>
+                </Panel>
+
+            </VBox>
+        </content>
+
+    </Page>
+
+</mvc:View>

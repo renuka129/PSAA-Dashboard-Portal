@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(n){"use strict";return n.extend("psaahome.controller.Home",{onAdmin:function(){window.location.assign("/admin/")},onManager:function(){window.location.assign("/manager/")},onEmployee:function(){window.location.assign("/employee/")}})});
+//# sourceMappingURL=Home.controller.js.map

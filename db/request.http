@@ -1,0 +1,60 @@
+@baseUrl = http://localhost:4004
+
+### 1. Check CAP server metadata
+GET {{baseUrl}}/odata/v4/project-srv/$metadata
+
+### 2. Get all projects
+GET {{baseUrl}}/odata/v4/project-srv/Projects
+
+### 3. Get all employees
+GET {{baseUrl}}/odata/v4/employee-srv/Employees
+
+### 4. Get all clients
+GET {{baseUrl}}/odata/v4/client-srv/Clients
+
+### 5. Get all tasks
+GET {{baseUrl}}/odata/v4/task-srv/Tasks
+
+### 6. Get all budgets
+GET {{baseUrl}}/odata/v4/budget-srv/Budgets
+
+### 7. Get all milestones
+GET {{baseUrl}}/odata/v4/milestone-srv/Milestones
+
+### 8. Get all timesheets
+GET {{baseUrl}}/odata/v4/timesheet-srv/Timesheets
+
+### 9. Get all timesheet entries
+GET {{baseUrl}}/odata/v4/timesheet-entry-srv/TimesheetEntries
+
+### 10. Get all invoices
+GET {{baseUrl}}/odata/v4/invoice-srv/Invoices
+
+### 11. Get all alerts
+GET {{baseUrl}}/odata/v4/alert-srv/Alerts
+
+### 12. Get timesheets awaiting approval
+GET {{baseUrl}}/odata/v4/approval-srv/Timesheets?$filter=status eq 'SUBMITTED'
+
+### 15. Submit the timesheet
+POST {{baseUrl}}/odata/v4/timesheet-srv/submitTimesheet
+Content-Type: application/json
+
+{
+  "timesheetID": "50000000-0000-4000-8000-000000000003"
+}
+
+### Check timesheet status
+GET {{baseUrl}}/odata/v4/timesheet-srv/Timesheets
+
+###
+POST {{baseUrl}}/odata/v4/approval-srv/approveTimesheet
+
+###
+http://localhost:4004/odata/v4/employee-srv/Employees
+
+###
+http://localhost:4004/odata/v4/client-srv/Clients
+
+###
+http://localhost:4004/odata/v4/project-srv/Projects

@@ -1,0 +1,1 @@
+using AlertSrv as service from '../../srv/alert-service';

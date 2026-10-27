@@ -1,0 +1,104 @@
+<mvc:View
+    controllerName="psaaadmin.controller.Employees"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page
+        id="employeesPage"
+        title="Employee Management"
+        showNavButton="true"
+        navButtonPress=".onNavBack">
+
+        <content>
+            <VBox id="employeesContainer" class="sapUiMediumMargin">
+
+                <Toolbar id="employeesToolbar">
+                    <Title id="employeesTitle" text="Employees" level="H2"/>
+                    <ToolbarSpacer id="employeesToolbarSpacer"/>
+
+                    <Button
+                        id="refreshEmployeesButton"
+                        text="Refresh"
+                        icon="sap-icon://refresh"
+                        press=".onRefresh"/>
+
+                    <Button
+                        id="addEmployeeButton"
+                        text="Add Employee"
+                        icon="sap-icon://add"
+                        type="Emphasized"
+                        press=".onAddEmployee"/>
+                </Toolbar>
+
+                <SearchField
+                    id="employeeSearchField"
+                    width="100%"
+                    placeholder="Search by name, email or employee number"
+                    liveChange=".onSearch"/>
+
+                <Table
+                    id="employeesTable"
+                    items="{employeesModel>/employees}"
+                    growing="true"
+                    growingThreshold="10"
+                    noDataText="No employees found">
+
+                    <columns>
+                        <Column id="employeeNumberColumn">
+                            <Text id="employeeNumberHeader" text="Employee No."/>
+                        </Column>
+                        <Column id="employeeNameColumn">
+                            <Text id="employeeNameHeader" text="Name"/>
+                        </Column>
+                        <Column id="employeeEmailColumn">
+                            <Text id="employeeEmailHeader" text="Email"/>
+                        </Column>
+                        <Column id="employeeDesignationColumn">
+                            <Text id="employeeDesignationHeader" text="Designation"/>
+                        </Column>
+                        <Column id="employeeDepartmentColumn">
+                            <Text id="employeeDepartmentHeader" text="Department"/>
+                        </Column>
+                        <Column id="employeeStatusColumn">
+                            <Text id="employeeStatusHeader" text="Status"/>
+                        </Column>
+                        <Column id="employeeActionsColumn" hAlign="Center">
+                            <Text id="employeeActionsHeader" text="Actions"/>
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem id="employeeRow">
+                            <cells>
+                                <Text id="employeeNumberCell" text="{employeesModel>employeeNo}"/>
+                                <Text id="employeeNameCell" text="{employeesModel>fullName}"/>
+                                <Text id="employeeEmailCell" text="{employeesModel>email}"/>
+                                <Text id="employeeDesignationCell" text="{employeesModel>designation}"/>
+                                <Text id="employeeDepartmentCell" text="{employeesModel>department}"/>
+                                <ObjectStatus id="employeeStatusCell" text="{employeesModel>status}"/>
+
+                                <HBox id="employeeActionButtons" justifyContent="Center">
+                                    <Button
+                                        id="editEmployeeButton"
+                                        icon="sap-icon://edit"
+                                        type="Transparent"
+                                        tooltip="Edit employee"
+                                        press=".onEditEmployee"/>
+
+                                    <Button
+                                        id="deleteEmployeeButton"
+                                        icon="sap-icon://delete"
+                                        type="Transparent"
+                                        tooltip="Delete employee"
+                                        press=".onDeleteEmployee"/>
+                                </HBox>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+
+                </Table>
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

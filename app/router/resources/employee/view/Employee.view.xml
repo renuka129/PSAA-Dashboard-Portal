@@ -1,0 +1,549 @@
+<mvc:View
+    controllerName="psaaemployee.controller.Employee"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page
+        id="employeePage"
+        title="PSAA | Employee Dashboard"
+        class="sapUiResponsiveContentPadding">
+
+        <content>
+            <VBox id="employeeContent" class="sapUiSmallMargin">
+
+                <Toolbar id="employeeToolbar">
+                    <Title
+                        id="employeeTitle"
+                        text="Employee Workspace"
+                        level="H2"/>
+                    <ToolbarSpacer id="toolbarSpacer"/>
+                    <Button
+                        id="refreshButton"
+                        text="Refresh"
+                        icon="sap-icon://refresh"
+                        press=".onRefresh"/>
+                </Toolbar>
+
+                <MessageStrip
+                    id="employeeInfoMessage"
+                    text="Manage your projects, review tasks, and submit weekly timesheets."
+                    type="Information"
+                    showIcon="true"
+                    class="sapUiSmallMarginBottom"/>
+
+                <!-- Employee Selection -->
+                <Panel
+                    id="employeeSelectionPanel"
+                    headerText="Select Employee"
+                    expandable="false"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <Select
+                            id="employeeSelect"
+                            width="100%"
+                            items="{employeeModel>/employees}"
+                            change=".onEmployeeChange">
+
+                            <core:Item
+                                id="employeeSelectItem"
+                                key="{employeeModel>ID}"
+                                text="{employeeModel>fullName}"/>
+                        </Select>
+                    </content>
+                </Panel>
+
+                <!-- KPI Summary -->
+                <HBox
+                    id="employeeKpiContainer"
+                    justifyContent="SpaceBetween"
+                    alignItems="Center"
+                    class="sapUiSmallMarginBottom">
+
+                    <VBox id="projectsKpi" class="sapUiSmallMargin">
+                        <Label id="projectsKpiLabel" text="My Projects"/>
+                        <ObjectNumber
+                            id="projectsKpiNumber"
+                            number="{dashboardModel>/projectCount}"/>
+                    </VBox>
+
+                    <VBox id="tasksKpi" class="sapUiSmallMargin">
+                        <Label id="tasksKpiLabel" text="My Tasks"/>
+                        <ObjectNumber
+                            id="tasksKpiNumber"
+                            number="{dashboardModel>/taskCount}"/>
+                    </VBox>
+
+                    <VBox id="timesheetsKpi" class="sapUiSmallMargin">
+                        <Label id="timesheetsKpiLabel" text="My Timesheets"/>
+                        <ObjectNumber
+                            id="timesheetsKpiNumber"
+                            number="{dashboardModel>/timesheetCount}"/>
+                    </VBox>
+                </HBox>
+
+                <!-- Projects -->
+                <Panel
+                    id="projectsPanel"
+                    headerText="My Projects"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <Table
+                            id="projectsTable"
+                            items="{projectModel>/projects}"
+                            noDataText="No projects found">
+
+                            <columns>
+                                <Column id="projectCodeColumn">
+                                    <Text
+                                        id="projectCodeHeader"
+                                        text="Project Code"/>
+                                </Column>
+
+                                <Column id="projectNameColumn">
+                                    <Text
+                                        id="projectNameHeader"
+                                        text="Project Name"/>
+                                </Column>
+
+                                <Column id="projectStatusColumn">
+                                    <Text
+                                        id="projectStatusHeader"
+                                        text="Status"/>
+                                </Column>
+
+                                <Column id="projectBillingColumn">
+                                    <Text
+                                        id="projectBillingHeader"
+                                        text="Billing Type"/>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem id="projectRow">
+                                    <cells>
+                                        <Text
+                                            id="projectCodeCell"
+                                            text="{projectModel>code}"/>
+
+                                        <Text
+                                            id="projectNameCell"
+                                            text="{projectModel>name}"/>
+
+                                        <ObjectStatus
+                                            id="projectStatusCell"
+                                            text="{projectModel>status}"/>
+
+                                        <Text
+                                            id="projectBillingCell"
+                                            text="{projectModel>billingType}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+                </Panel>
+
+                <!-- Tasks -->
+                <Panel
+                    id="tasksPanel"
+                    headerText="Project Tasks"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <Table
+                            id="tasksTable"
+                            items="{taskModel>/tasks}"
+                            noDataText="No tasks found">
+
+                            <columns>
+                                <Column id="taskNameColumn">
+                                    <Text id="taskNameHeader" text="Task"/>
+                                </Column>
+
+                                <Column id="taskStatusColumn">
+                                    <Text id="taskStatusHeader" text="Status"/>
+                                </Column>
+
+                                <Column id="taskEstimatedColumn">
+                                    <Text
+                                        id="taskEstimatedHeader"
+                                        text="Estimated Hours"/>
+                                </Column>
+
+                                <Column id="taskActualColumn">
+                                    <Text
+                                        id="taskActualHeader"
+                                        text="Actual Hours"/>
+                                </Column>
+
+                                <Column id="taskDueDateColumn">
+                                    <Text
+                                        id="taskDueDateHeader"
+                                        text="Due Date"/>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem id="taskRow">
+                                    <cells>
+                                        <Text
+                                            id="taskNameCell"
+                                            text="{taskModel>name}"/>
+
+                                        <ObjectStatus
+                                            id="taskStatusCell"
+                                            text="{taskModel>status}"/>
+
+                                        <Text
+                                            id="taskEstimatedCell"
+                                            text="{taskModel>estimatedHours}"/>
+
+                                        <Text
+                                            id="taskActualCell"
+                                            text="{taskModel>actualHours}"/>
+
+                                        <Text
+                                            id="taskDueDateCell"
+                                            text="{taskModel>dueDate}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+                </Panel>
+
+                <!-- Create Timesheet -->
+                <Panel
+                    id="createTimesheetPanel"
+                    headerText="Create Weekly Timesheet"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <VBox
+                            id="createTimesheetForm"
+                            class="sapUiSmallMargin">
+
+                            <Label
+                                id="timesheetProjectLabel"
+                                text="Project"
+                                labelFor="timesheetProjectSelect"/>
+
+                            <Select
+                                id="timesheetProjectSelect"
+                                width="100%"
+                                items="{projectModel>/projects}">
+
+                                <core:Item
+                                    id="timesheetProjectItem"
+                                    key="{projectModel>ID}"
+                                    text="{projectModel>name}"/>
+                            </Select>
+
+                            <Label
+                                id="weekStartLabel"
+                                text="Week Starting Monday"
+                                labelFor="weekStartPicker"
+                                class="sapUiSmallMarginTop"/>
+
+                            <DatePicker
+                                id="weekStartPicker"
+                                width="100%"
+                                valueFormat="yyyy-MM-dd"
+                                displayFormat="yyyy-MM-dd"/>
+
+                            <Button
+                                id="createTimesheetButton"
+                                text="Create Timesheet"
+                                icon="sap-icon://add"
+                                type="Emphasized"
+                                press=".onCreateTimesheet"
+                                class="sapUiSmallMarginTop"/>
+                        </VBox>
+                    </content>
+                </Panel>
+
+                <!-- My Timesheets -->
+                <Panel
+                    id="timesheetsPanel"
+                    headerText="My Timesheets"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <Table
+                            id="timesheetsTable"
+                            items="{timesheetModel>/timesheets}"
+                            mode="SingleSelectLeft"
+                            selectionChange=".onTimesheetRowSelection"
+                            noDataText="No timesheets found">
+
+                            <columns>
+                                <Column id="timesheetProjectColumn">
+                                    <Text
+                                        id="timesheetProjectHeader"
+                                        text="Project"/>
+                                </Column>
+
+                                <Column id="timesheetWeekStartColumn">
+                                    <Text
+                                        id="timesheetWeekStartHeader"
+                                        text="Week Start"/>
+                                </Column>
+
+                                <Column id="timesheetWeekEndColumn">
+                                    <Text
+                                        id="timesheetWeekEndHeader"
+                                        text="Week End"/>
+                                </Column>
+
+                                <Column id="timesheetHoursColumn">
+                                    <Text
+                                        id="timesheetHoursHeader"
+                                        text="Total Hours"/>
+                                </Column>
+
+                                <Column id="timesheetStatusColumn">
+                                    <Text
+                                        id="timesheetStatusHeader"
+                                        text="Status"/>
+                                </Column>
+
+                                <Column id="timesheetActionColumn">
+                                    <Text
+                                        id="timesheetActionHeader"
+                                        text="Action"/>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem id="timesheetRow">
+                                    <cells>
+                                        <Text
+                                            id="timesheetProjectCell"
+                                            text="{timesheetModel>projectName}"/>
+
+                                        <Text
+                                            id="timesheetWeekStartCell"
+                                            text="{timesheetModel>weekStart}"/>
+
+                                        <Text
+                                            id="timesheetWeekEndCell"
+                                            text="{timesheetModel>weekEnd}"/>
+
+                                        <Text
+                                            id="timesheetHoursCell"
+                                            text="{timesheetModel>totalHours}"/>
+
+                                        <ObjectStatus
+                                            id="timesheetStatusCell"
+                                            text="{timesheetModel>status}"
+                                            state="{timesheetModel>statusState}"/>
+
+                                        <Button
+                                            id="submitTimesheetButton"
+                                            text="Submit"
+                                            type="Emphasized"
+                                            press=".onSubmitTimesheet"
+                                            enabled="{timesheetModel>canSubmit}"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+                </Panel>
+
+                <!-- Add Timesheet Entry -->
+                <Panel
+                    id="addEntryPanel"
+                    headerText="Add Timesheet Entry"
+                    expandable="true"
+                    expanded="true"
+                    class="sapUiSmallMarginBottom">
+
+                    <content>
+                        <VBox
+                            id="addEntryForm"
+                            class="sapUiSmallMargin">
+
+                            <MessageStrip
+                                id="entryInfoMessage"
+                                text="Select a timesheet above before adding entries."
+                                type="Information"
+                                showIcon="true"
+                                class="sapUiSmallMarginBottom"/>
+
+                            <Label
+                                id="entryTaskLabel"
+                                text="Task"
+                                labelFor="entryTaskSelect"/>
+
+                            <Select
+                                id="entryTaskSelect"
+                                width="100%"
+                                items="{taskModel>/tasks}">
+
+                                <core:Item
+                                    id="entryTaskItem"
+                                    key="{taskModel>ID}"
+                                    text="{taskModel>name}"/>
+                            </Select>
+
+                            <Label
+                                id="entryWorkDateLabel"
+                                text="Work Date"
+                                labelFor="entryWorkDatePicker"
+                                class="sapUiSmallMarginTop"/>
+
+                            <DatePicker
+                                id="entryWorkDatePicker"
+                                width="100%"
+                                valueFormat="yyyy-MM-dd"
+                                displayFormat="yyyy-MM-dd"/>
+
+                            <Label
+                                id="entryHoursLabel"
+                                text="Hours Worked"
+                                labelFor="entryHoursInput"
+                                class="sapUiSmallMarginTop"/>
+
+                            <Input
+                                id="entryHoursInput"
+                                type="Number"
+                                placeholder="Example: 8"/>
+
+                            <Label
+                                id="entryBillableLabel"
+                                text="Billable"
+                                labelFor="entryBillableSwitch"
+                                class="sapUiSmallMarginTop"/>
+
+                            <Switch
+                                id="entryBillableSwitch"
+                                state="true"
+                                customTextOn="Yes"
+                                customTextOff="No"/>
+
+                            <Label
+                                id="entryNotesLabel"
+                                text="Work Notes"
+                                labelFor="entryNotesInput"
+                                class="sapUiSmallMarginTop"/>
+
+                            <TextArea
+                                id="entryNotesInput"
+                                width="100%"
+                                rows="3"
+                                placeholder="Describe the work completed"/>
+
+                            <Button
+                                id="addEntryButton"
+                                text="Add Entry"
+                                icon="sap-icon://add"
+                                type="Emphasized"
+                                press=".onAddTimesheetEntry"
+                                class="sapUiSmallMarginTop"/>
+
+                            <Title
+                                id="entryListTitle"
+                                text="Timesheet Entries"
+                                level="H3"
+                                class="sapUiMediumMarginTop"/>
+
+                            <HBox
+                                id="totalHoursContainer"
+                                alignItems="Center"
+                                class="sapUiSmallMarginBottom">
+
+                                <Label
+                                    id="totalHoursLabel"
+                                    text="Total Hours:"/>
+
+                                <ObjectNumber
+                                    id="totalHoursNumber"
+                                    number="{timesheetModel>/totalHours}"
+                                    unit="hours"
+                                    class="sapUiSmallMarginBegin"/>
+                            </HBox>
+
+                            <Table
+                                id="entriesTable"
+                                items="{timesheetModel>/entries}"
+                                noDataText="No entries found">
+
+                                <columns>
+                                    <Column id="entryWorkDateColumn">
+                                        <Text
+                                            id="entryWorkDateHeader"
+                                            text="Work Date"/>
+                                    </Column>
+
+                                    <Column id="entryTaskColumn">
+                                        <Text
+                                            id="entryTaskHeader"
+                                            text="Task ID"/>
+                                    </Column>
+
+                                    <Column id="entryHoursColumn">
+                                        <Text
+                                            id="entryHoursHeader"
+                                            text="Hours"/>
+                                    </Column>
+
+                                    <Column id="entryBillableColumn">
+                                        <Text
+                                            id="entryBillableHeader"
+                                            text="Billable"/>
+                                    </Column>
+
+                                    <Column id="entryNotesColumn">
+                                        <Text
+                                            id="entryNotesHeader"
+                                            text="Notes"/>
+                                    </Column>
+                                </columns>
+
+                                <items>
+                                    <ColumnListItem id="entryRow">
+                                        <cells>
+                                            <Text
+                                                id="entryWorkDateCell"
+                                                text="{timesheetModel>workDate}"/>
+
+                                            <Text
+                                                id="entryTaskCell"
+                                                text="{timesheetModel>task_ID}"/>
+
+                                            <Text
+                                                id="entryHoursCell"
+                                                text="{timesheetModel>hours}"/>
+
+                                            <Text
+                                                id="entryBillableCell"
+                                                text="{= ${timesheetModel>billable} ? 'Yes' : 'No' }"/>
+
+                                            <Text
+                                                id="entryNotesCell"
+                                                text="{timesheetModel>notes}"/>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+
+                        </VBox>
+                    </content>
+                </Panel>
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

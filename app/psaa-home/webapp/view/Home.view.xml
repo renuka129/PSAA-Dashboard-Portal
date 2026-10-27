@@ -1,0 +1,53 @@
+<mvc:View
+    controllerName="psaahome.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page id="dashboard" title="PSAA Dashboard Portal" class="sapUiResponsiveContentPadding">
+        <content>
+            <VBox
+            id="s3"
+                alignItems="Center"
+                justifyContent="Center"
+                class="sapUiMediumMargin">
+
+                <Title
+                id="s1"
+                    text="Welcome to PSAA"
+                    level="H1"
+                    class="sapUiMediumMarginBottom"/>
+
+                <Text
+                id="s"
+                    text="Choose a dashboard to continue"
+                    class="sapUiMediumMarginBottom"/>
+
+                <Button
+                    id="admin"
+                    text="Admin Dashboard"
+                    icon="sap-icon://manager"
+                    type="Emphasized"
+                    width="250px"
+                    class="sapUiSmallMargin"
+                    press=".onAdmin"/>
+
+                <Button
+                    id="manager"
+                    text="Manager Dashboard"
+                    icon="sap-icon://group"
+                    width="250px"
+                    class="sapUiSmallMargin"
+                    press=".onManager"/>
+
+                <Button
+                    id="Emp"
+                    text="Employee Dashboard"
+                    icon="sap-icon://employee"
+                    width="250px"
+                    class="sapUiSmallMargin"
+                    press=".onEmployee"/>
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
